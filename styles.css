@@ -1,0 +1,306 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    font-family: 'Manrope';
+    background-color: #1a1e1f;
+    /* background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%); */
+}
+
+
+/* NAVBAR STYLES */
+.navbar{
+    background: rgba(255, 255, 255, 0.05);
+    
+
+    /* backdrop-filter: blur(5.5px); */
+}
+
+.nav1{
+    background-color: #e9a401;
+    border-bottom-right-radius: 50px;
+}
+.nav2{
+    background-color: #e9a401;
+    border-bottom-left-radius: 50px;
+}
+
+/* Custom Offcanvas Styles */
+.custom-offcanvas {
+    width: 250px; /* Adjust width */
+    background: rgba(0, 0, 0, 0.9); /* Dark with transparency */
+    color: white;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+    border: none;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    text-shadow:
+                    0 1px 0 rgb(146, 146, 146),
+                    0 2px 0 rgb(255, 153, 0),
+                    0 3px 0 rgb(174, 0, 255),
+                   /* 0 4px 0 rgb(175,175,175),
+                    0 5px 0 rgb(170,170,170),
+                     0 6px 0 rgb(165,165,165),
+                    0 7px 0 rgb(160,160,160),
+                    0 8px 0 rgb(155,155,155),
+                    0 9px 0 rgb(150,150,150), */
+
+                    0 1px 5px rgba(0,0,0,.05),
+                    0 5px 5px rgba(0,0,0,.10),
+                    0 10px 10px rgba(0,0,0,.15),
+                    0 15px 10px rgba(0,0,0,.20),
+                    0 20px 15px rgba(0,0,0,.25);
+    transform: translate(-5%,-5%);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Close Button */
+.btn-close {
+    filter: invert(1); /* White close icon */
+}
+
+/* Offcanvas Header */
+.offcanvas-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+
+/* INTRO SECTION */
+
+#intro {
+    padding-top: 100px; /* Adjust this value based on your navbar height */
+    min-height: 100vh; /* This makes the intro section take full viewport height */
+    color: white; /* Makes text visible against dark background */
+}
+
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.ektha-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 800;
+    font-size: 45.3vw; /* Covers the whole screen */
+    line-height: 1;
+    background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
+    background-size: 300% 300%; /* Make the gradient larger for smooth movement */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap; /* Prevents line breaks */
+    overflow: hidden;
+    text-align: start;
+    animation: gradientAnimation 5s ease-in-out infinite; /* Apply animation */
+    margin-bottom: -8rem;
+}
+.ektha-text2{
+    font-family: 'Notable';
+    font-weight: 200;
+    font-size: 5.3vw; /* Covers the whole screen */
+    background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
+    background-size: 300% 300%; /* Make the gradient larger for smooth movement */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap; /* Prevents line breaks */
+    overflow: hidden;
+    text-align: center;
+    animation: gradientAnimation 5s ease-in-out infinite; /* Apply animation */
+
+}
+
+/* On smaller screens, change the text */
+@media (max-width: 992px) {
+    .ektha-text,.ektha-text2 {
+        font-size: 15vw; /* Adjust size for smaller screens */
+    }
+    .ektha-text2 {
+        font-size: 15vw; /* Adjust size for smaller screens */
+    }
+}
+
+/* Change the text dynamically for smaller screens */
+@media (max-width: 991px) {
+    .ektha-text,.ektha-text2 {
+        font-size: 12vw; /* Adjust font size */
+        white-space: normal; /* Allow wrapping */
+        line-height: 1.2;
+    }
+     
+}
+
+
+
+
+
+
+
+/* CountDown SECTION */
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+    color: white;
+}
+
+.countdown-wrapper {
+    text-align: center;
+}
+
+h2 {
+    font-size: 3vw;
+    margin-bottom: 20px;
+    color: #ffae00;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.countdown-box {
+    background: linear-gradient(135deg, #e9a401, #ff7f50);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.countdown-box span {
+    font-size: 3rem;
+    font-weight: bold;
+    display: block;
+}
+
+.countdown-box small {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .countdown-timer {
+        flex-wrap: wrap;
+    }
+    .countdown-box {
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+    }
+    .countdown-box span {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 5vw;
+    }
+}
+
+
+
+
+
+/* Teams Page CSS */
+
+.teams-text-intro{
+    font-family: 'Notable', sans-serif;
+    font-weight: 200;
+    font-size: 9.3vw; /* Covers the whole screen */
+    background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
+    background-size: 300% 300%; /* Make the gradient larger for smooth movement */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    white-space: nowrap; /* Prevents line breaks */
+    overflow: hidden;
+    text-align: center;
+    animation: gradientAnimation 5s ease-in-out infinite; /* Apply animation */
+    margin-top: 6rem;
+}
+.teams-text-intro2{
+    font-family: 'Notable', sans-serif;
+    font-weight: 200;
+    font-size: 9.3vw; /* Covers the whole screen */
+    background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
+    background-size: 300% 300%; /* Make the gradient larger for smooth movement */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    white-space: nowrap; /* Prevents line breaks */
+    overflow: hidden;
+    text-align: center;
+    animation: gradientAnimation 5s ease-in-out infinite; /* Apply animation */
+}
+
+.teams-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 800;
+    font-size: 15.3vw; /* Covers the whole screen */
+    line-height: 1;
+    background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
+    background-size: 300% 300%; /* Make the gradient larger for smooth movement */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap; /* Prevents line breaks */
+    overflow: hidden;
+    text-align: center;
+    animation: gradientAnimation 5s ease-in-out infinite; /* Apply animation */
+}
+
+
+
+
+
