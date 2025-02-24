@@ -1,32 +1,46 @@
+/* Base styles remain unchanged */
 html {
     scroll-behavior: smooth;
 }
 
-
-
 body {
     font-family: 'Manrope';
     background-color: #1a1e1f;
-    /* background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%); */
 }
-
 
 /* NAVBAR STYLES */
-.navbar{
+.navbar {
     background: rgba(255, 255, 255, 0.05);
-    
-
-    /* backdrop-filter: blur(5.5px); */
 }
 
-.nav1{
+.nav1 {
     background-color: #e9a401;
     border-bottom-right-radius: 50px;
+    padding: 0.5rem 1.5rem;
 }
-.nav2{
+
+.nav2 {
     background-color: #e9a401;
     border-bottom-left-radius: 50px;
+    padding: 0.5rem 1.5rem;
 }
+
+/* Navbar Responsive Adjustments */
+@media (max-width: 991px) {
+    .navbar-brand img {
+        width: 45px !important;
+    }
+}
+/* Navbar Links */
+.navbar-nav .nav-link {
+    font-size: clamp(14px, 1.2vw, 18px);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
 
 /* Custom Offcanvas Styles */
 .custom-offcanvas {
@@ -87,76 +101,101 @@ body {
 
 
 /* INTRO SECTION */
-
 #intro {
-    padding-top: 100px; /* Adjust this value based on your navbar height */
-    min-height: 100vh; /* This makes the intro section take full viewport height */
-    color: white; /* Makes text visible against dark background */
-}
-
-
-@keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    padding-top: clamp(60px, 10vh, 100px);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
 }
 
 .ektha-text {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 800;
-    font-size: 45.3vw; /* Covers the whole screen */
-    line-height: 1;
+    font-size: 45.3vw;
+    line-height: 0.8;
     background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
-    background-size: 300% 300%; /* Make the gradient larger for smooth movement */
+    background-size: 300% 300%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    position: relative;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    white-space: nowrap; /* Prevents line breaks */
-    overflow: hidden;
-    text-align: start;
-    animation: gradientAnimation 5s ease-in-out infinite; /* Apply animation */
+    white-space: nowrap;
+    text-align: center;
+    animation: gradientAnimation 5s ease-in-out infinite;
     margin-bottom: -8rem;
 }
-.ektha-text2{
+
+.ektha-text2 {
     font-family: 'Notable';
     font-weight: 200;
-    font-size: 5.3vw; /* Covers the whole screen */
+    font-size: 5.3vw;
     background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
-    background-size: 300% 300%; /* Make the gradient larger for smooth movement */
+    background-size: 300% 300%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    position: relative;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    white-space: nowrap; /* Prevents line breaks */
-    overflow: hidden;
+    white-space: nowrap;
     text-align: center;
-    animation: gradientAnimation 5s ease-in-out infinite; /* Apply animation */
-
+    animation: gradientAnimation 5s ease-in-out infinite;
 }
 
-/* On smaller screens, change the text */
-@media (max-width: 992px) {
-    .ektha-text,.ektha-text2 {
-        font-size: 15vw; /* Adjust size for smaller screens */
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    #intro {
+        padding-top: 80px;
+        align-items: stretch;
+        text-align: center;
     }
+
+    .ektha-text {
+        font-size: 35vw;
+        white-space: normal;
+        line-height: 0.9;
+        margin-bottom: -2rem;
+        padding: 0 10px;
+    }
+    
     .ektha-text2 {
-        font-size: 15vw; /* Adjust size for smaller screens */
+        font-size: 20vw;
+        white-space: normal;
+        line-height: 1;
+        padding: 0 10px;
     }
 }
 
-/* Change the text dynamically for smaller screens */
-@media (max-width: 991px) {
-    .ektha-text,.ektha-text2 {
-        font-size: 12vw; /* Adjust font size */
-        white-space: normal; /* Allow wrapping */
-        line-height: 1.2;
+/* Small Mobile Adjustments */
+@media (max-width: 480px) {
+    #intro {
+        padding-top: 60px;
     }
-     
+
+    .ektha-text {
+        font-size: 45vw;
+        margin-bottom: -1rem;
+    }
+    
+    .ektha-text2 {
+        font-size: 25vw;
+    }
+}
+
+/* Very Small Mobile Adjustments */
+@media (max-width: 320px) {
+    .ektha-text {
+        font-size: 50vw;
+    }
+    
+    .ektha-text2 {
+        font-size: 30vw;
+    }
 }
 
 
