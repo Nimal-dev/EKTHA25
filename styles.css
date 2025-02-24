@@ -336,62 +336,7 @@ h2 {
 
 
 
-/* Teams Page CSS */
 
-.teams-text-intro{
-    font-family: 'Notable', sans-serif;
-    font-weight: 200;
-    font-size: 9.3vw; /* Covers the whole screen */
-    background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
-    background-size: 300% 300%; /* Make the gradient larger for smooth movement */
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    position: relative;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    white-space: nowrap; /* Prevents line breaks */
-    overflow: hidden;
-    text-align: center;
-    animation: gradientAnimation 5s ease-in-out infinite; /* Apply animation */
-    margin-top: 6rem;
-}
-.teams-text-intro2{
-    font-family: 'Notable', sans-serif;
-    font-weight: 200;
-    font-size: 9.3vw; /* Covers the whole screen */
-    background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
-    background-size: 300% 300%; /* Make the gradient larger for smooth movement */
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    position: relative;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    white-space: nowrap; /* Prevents line breaks */
-    overflow: hidden;
-    text-align: center;
-    animation: gradientAnimation 5s ease-in-out infinite; /* Apply animation */
-}
-
-.teams-text {
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 800;
-    font-size: 15.3vw; /* Covers the whole screen */
-    line-height: 1;
-    background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
-    background-size: 300% 300%; /* Make the gradient larger for smooth movement */
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    position: relative;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    white-space: nowrap; /* Prevents line breaks */
-    overflow: hidden;
-    text-align: center;
-    animation: gradientAnimation 5s ease-in-out infinite; /* Apply animation */
-}
 
 /*main events*/
 
