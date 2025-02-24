@@ -231,7 +231,28 @@ body {
 }
 
 
+/* DATE STYLE */
+#date_Container {
+    width: 100vw;
+    background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
+    filter: url(#threshold) blur(0.6px);
+}
 
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    /* height: 11rem; */
+    display: inline-block;
+    letter-spacing: 1rem;
+    font-weight: 600;
+    font-family: "Kanit", sans-serif;
+    font-size: 80pt;
+    background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
+    text-align: center;
+
+    user-select: none;
+}
 
 
 

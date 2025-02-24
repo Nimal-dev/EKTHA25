@@ -125,8 +125,29 @@
     </section>
 
 
+
+    <!-- DATE -->
+     <section>
+        <div class="container-fluid" id="date_Container">
+            <span id="text1"></span>
+            <span id="text2"></span>
+        </div>
+        
+        <svg id="filters">
+            <defs>
+                <filter id="threshold">
+                    <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                                            0 1 0 0 0
+                                            0 0 1 0 0
+                                            0 0 0 255 -140" />
+                </filter>
+            </defs>
+        </svg>
+     </section>
+    
     <!-- CountDown Section -->
     <section id="countdown" data-aos="zoom-in">
+        
         <div class="countdown-wrapper">
             <h2>Event Starts In:</h2>
             <div class="countdown-timer">
