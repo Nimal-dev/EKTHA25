@@ -1,178 +1,172 @@
 /* teams Card */
-.containers {
-  max-width: 900px;
+/* Main Container */
+
+.teamhead{
+  font-family: 'Manrope';
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  text-decoration: underline;
+  padding-left: 3rem;
+  color: #e9a401;
+}
+
+/* .profile-container:hover */
+.row {
   display: flex;
-  justify-content: space-evenly;
-  margin: 0 auto;
+  justify-content: center; /* Centers content */
+  gap: 20px; /* Adds space between cards */
 }
 
-.card-wrapper {
-  width: 400px;
-  height: 500px;
+.profile-container {
+  width: 300px; /* Ensure each card has a fixed width */
   position: relative;
-}
-
-.card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 350px;
-  height: 450px;
-  transform: translate(-50%, -50%);
-  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
-  cursor: pointer;
-  transition: 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  transition: 1s all ease;
 }
 
-.card-image {
+.profile-container::before {
+  content: '';
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  z-index: 2;
-  background-color: #000;
-  transition: .5s;
+  background: url('https://www.dropbox.com/s/ce3avjentos3rp3/profile-pcs.jpg?raw=1') no-repeat center center/cover;
+  z-index: -1;
+  opacity: 1;  
+  transition: all .5s ease-in;
 }
 
-.card:hover img {
-  opacity: 0.4;
-  transition: .5s;
-}
-
-.card:hover .card-image {
-  transform: translateY(-100px);
-  transition: all .9s;
-}
-
-/**** Social Icons *****/
-.social-icons {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-  display: flex;
-}
-
-.social-icons li {
-  list-style: none;
-}
-
-.social-icons li a {
-  position: relative;
-  display: block;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  background: #fff;
-  font-size: 23px;
-  color: #333;
-  font-weight: bold;
-  margin: 0 6px;
-  transition: .4s;
-  transform: translateY(200px);
+.profile-container:hover:before {
   opacity: 0;
+  transition: all .5s ease;
 }
 
-.card:hover .social-icons li a {
-  transform: translateY(0px);
+
+/* Profile Card Wrapper */
+.profile-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.profile-wrapper::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #2371ae 0%, #bb47d4 100%);
+  transform: skew(30deg) translateX(125%);
+  opacity: 0.9;
+  transition: all 0.6s ease;
+}
+
+.profile-wrapper::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #2371ae 0%, #bb47d4 100%);
+  transform: skew(30deg) translateX(-125%);
+  opacity: 0.9;
+  transition: all 0.6s ease;
+}
+
+.profile-container:hover .profile-wrapper::after{
+  transform: skew(30deg) translateX(125%);
+  background: linear-gradient(to right, #bb47d4 0%, #2371ae 100%);
+  
+}
+.profile-container:hover .profile-wrapper::before{
+  transform: skew(30deg) translateX(-125%);
+  background: linear-gradient(to right, #bb47d4 0%, #2371ae 100%);
+}
+
+/* Profile Card */
+.profile-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 10px;
+  position: relative;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.profile-container:hover .profile-card {
   opacity: 1;
-}
-
-.social-icons li a:hover {
-  background: #000;
-  transition: .2s;
-}
-
-.social-icons li a .fab {
-  transition: .8s;
-}
-
-.card:hover li:nth-child(1) a {
-  transition-delay: 0.1s;
-}
-
-.card:hover li:nth-child(2) a {
+  transition: all 0.6s ease;
   transition-delay: 0.2s;
 }
 
-.card:hover li:nth-child(3) a {
-  transition-delay: 0.3s;
-}
-
-.card:hover li:nth-child(4) a {
-  transition-delay: 0.4s;
-}
-
-/**** Personal Details ****/
-.details {
+.profile-card .fav-icon {
+  color: #ec0e0e;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #fff;
-  width: 100%;
-  height: 120px;
-  z-index: 1;
-  padding: 10px;
-}
+  top: 5px;
+  left: 10px;
+  font-size: 21px;
+  cursor: pointer;
+} 
 
-.details h2 {
-  margin: 30px 0;
-  padding: 0;
-  text-align: center;
-}
-
-.job-title {
-  font-size: 1rem;
-  line-height: 2.5rem;
-  color: #333;
-  font-weight: 300;
-}
-
-.jane {
-  position: absolute;
-  bottom: -120px;
-  left: 0;
-  opacity: 0;
-  background: #fff;
-  width: 100%;
-  height: 120px;
-  z-index: 3;
-  padding: 10px;
-  transition: .4s;
-}
-
-.profile-two .social-icons li a {
+/* Profile Picture */
+.profile-card img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
   border-radius: 50%;
+  margin: 1rem 0;
+  border: 2px solid transparent;
+  background-image: linear-gradient(white, white), 
+                    linear-gradient(to right, green, gold);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  /* border: 2px solid #1999; */
+  position: relative;
 }
 
-.card:hover .profile-img--two {
-  transform: rotateY(180deg);
+.profile-card  h2 {
+  line-height: 1.2;
+  color: #ffffff;
+}
+.profile-card  h4 {
+  line-height: 1.5;
+  color: #444;
 }
 
-.card:hover .jane {
-  bottom: 0;
-  left: 0;
-  transition-delay: 0.5s;
-  opacity: 1;
+.profile-card  p {
+  line-height: 1.2;
+  color: #333;
+  margin: 10px 0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .containers {
-      flex-direction: column;
-      align-items: center;
-  }
+/* Profile Icons */
+.profile-card .icons {
+  display: flex;
+  color: #333;
+  width: 90%;
+  justify-content: space-evenly;
+  font-size: 1.4rem;
+  margin: 5px 0;
+}
 
-  .card-wrapper {
-      margin-bottom: 20px;
-  }
-
-  .card {
-      width: 90%;
-  }
+.profile-card .icons i:hover {
+  background-image: linear-gradient(to right, #bb47d4 0%, #2371ae 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
 }
