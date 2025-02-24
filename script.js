@@ -1,23 +1,19 @@
 window.addEventListener('resize', function () {
     const textElement = document.getElementById('dynamicText');
-    if (window.innerWidth <= 991) {
-        textElement.textContent = "Techno Cultural Fest EKTHA";
-    } else {
-        textElement.textContent = "EKTHA";
+    if (textElement) {
+        textElement.textContent = window.innerWidth <= 991 ? "Techno Cultural Fest EKTHA" : "EKTHA";
     }
 });
 
 // Initial check on page load
 document.addEventListener('DOMContentLoaded', function () {
     const textElement = document.getElementById('dynamicText');
-    if (window.innerWidth <= 991) {
-        textElement.textContent = "Techno Cultural Fest EKTHA";
+    if (textElement) {
+        textElement.textContent = window.innerWidth <= 991 ? "Techno Cultural Fest EKTHA" : "EKTHA";
     }
 });
 
-
 // Initialize AOS
-
 document.addEventListener("DOMContentLoaded", function () {
     AOS.init({
         duration: 1000,
@@ -27,14 +23,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Ensure the page loads at the top
 window.onload = function () {
-window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 };
 
-
-
-
 // Countdown
-
 function startCountdown() {
     // Set event date (March 5, 2025, 10:00 AM UTC)
     const eventDate = new Date(Date.UTC(2025, 2, 5, 10, 0, 0)).getTime(); 
@@ -42,10 +34,6 @@ function startCountdown() {
     function updateCountdown() {
         const now = new Date().getTime();
         const timeLeft = eventDate - now;
-
-        console.log("Event Date (UTC):", eventDate);
-        console.log("Current Time (UTC):", now);
-        console.log("Time Left (ms):", timeLeft);
 
         if (timeLeft <= 0) {
             document.querySelector(".countdown-timer").innerHTML = "<h3>Event Started!</h3>";
@@ -69,4 +57,3 @@ function startCountdown() {
 }
 
 document.addEventListener("DOMContentLoaded", startCountdown);
-

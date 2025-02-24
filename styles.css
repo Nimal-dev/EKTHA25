@@ -50,8 +50,18 @@ body {
 }
 
 /* Navbar Toggler */
+/* Navbar Adjustments */
 .navbar-toggler {
     border: none;
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    padding: 8px;
 }
 
 /* Navbar Links */
