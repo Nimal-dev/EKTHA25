@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
 window.addEventListener('resize', function () {
     const textElement = document.getElementById('dynamicText');
     if (textElement) {
