@@ -233,7 +233,7 @@ body {
 
 /* DATE STYLE */
 #date_Container {
-    width: 100vw;
+    width: 90vw;
     background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
     filter: url(#threshold) blur(0.6px);
 }
@@ -250,10 +250,20 @@ body {
     font-size: 80pt;
     background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
     text-align: center;
-
     user-select: none;
 }
 
+@media (max-width: 320px) {
+    #text1,
+    #text2 {
+        font-size: 30pt;
+    }
+
+    #date_Container {
+        width: 40vw;
+    }
+    
+}
 
 
 
@@ -334,6 +344,116 @@ h2 {
 
 
 
+     /* Preloader Container */
+     #preloader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        animation: fadeOut 1.5s ease-out 5s forwards;
+    }
+
+    /* SVG Styling */
+    svg {
+        width: 60%;
+        max-width: 800px;
+    }
+
+    /* Text Styling */
+    text {
+        font-size: 120px;
+        font-weight: bold;
+        font-family: 'Cinzel Decorative', serif ;
+        fill: transparent;
+        stroke: #ffa500;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation: drawText 3s ease-in-out forwards, glowEffect 2.5s infinite alternate;
+    }
+
+    /* Outline Animation */
+    @keyframes drawText {
+        0% {
+            stroke-dashoffset: 500;
+            opacity: 0;
+        }
+        20% {
+            opacity: 1;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    /* Glow Animation */
+    @keyframes glowEffect {
+        0% {
+            filter: drop-shadow(0px 0px 3px rgba(255, 165, 0, 0.5));
+        }
+        100% {
+            filter: drop-shadow(0px 0px 10px rgba(255, 165, 0, 1));
+        }
+    }
+
+    /* Fill Animation */
+    @keyframes fillText {
+        0% {
+            fill: transparent;
+        }
+        100% {
+            fill: #ffa500;
+            stroke: none;
+        }
+    }
+
+    /* Text fill transition after outline */
+    text {
+        animation: drawText 3s ease-in-out forwards, glowEffect 2.5s infinite alternate, fillText 1.5s ease-in 3s forwards;
+    }
+
+    /* Smooth Preloader Fade-Out */
+    @keyframes fadeOut {
+        0% {
+            opacity: 1;
+            visibility: visible;
+        }
+        100% {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    /* Landing Page */
+    #main-content {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to right, #1a1a1a, #333);
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        padding-top: 20%;
+        opacity: 0;
+        animation: fadeIn 1.5s ease-out 5s forwards;
+    }
+
+    /* Landing Page Fade-In */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 
 
 
