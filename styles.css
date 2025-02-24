@@ -124,27 +124,31 @@ body {
 }
 
 .ektha-text {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Cinzel Decorative', serif;
     font-weight: 800;
-    font-size: 45.3vw;
-    line-height: 0.8;
+    font-size: 280px; /* Slightly reduced for better fit */
+    line-height: 1.2; /* Balanced for visibility */
     background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
     background-size: 300% 300%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em; /* Improved spacing */
     text-transform: uppercase;
     white-space: nowrap;
     text-align: center;
     animation: gradientAnimation 5s ease-in-out infinite;
-    margin-bottom: -2rem;
+    margin-top: 3%; /* Adjusted for better positioning */
+    padding-bottom: 1%;
+    width: 100%;
+    overflow: visible;
+    display: block;
 }
 
 .ektha-text2 {
-    font-family: 'Notable';
+    font-family: 'Notable', sans-serif;
     font-weight: 200;
-    font-size: 5.3vw;
+    font-size: 5vw;
     background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
     background-size: 300% 300%;
     -webkit-background-clip: text;
@@ -158,26 +162,42 @@ body {
 }
 
 /* Mobile Responsive Adjustments */
+@media (max-width: 1024px) {
+    .ektha-text {
+        font-size: 20vw; /* Adjusted for tablets */
+        white-space: normal;
+        line-height: 1;
+        margin-bottom: -1rem;
+        padding: 0 5%;
+    }
+    
+    .ektha-text2 {
+        font-size: 8vw;
+        white-space: normal;
+        line-height: 1.2;
+        padding: 0 5%;
+    }
+}
+
 @media (max-width: 768px) {
     #intro {
         padding-top: 80px;
-        align-items: stretch;
         text-align: center;
     }
 
     .ektha-text {
-        font-size: 35vw;
+        font-size: 21vw;
         white-space: normal;
-        line-height: 0.9;
-        margin-bottom: -2rem;
-        padding: 0 10px;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        padding: 0 5%;
     }
     
     .ektha-text2 {
-        font-size: 20vw;
+        font-size: 15vw;
         white-space: normal;
         line-height: 1;
-        padding: 0 10px;
+        padding: 0 5%;
     }
 }
 
@@ -188,25 +208,26 @@ body {
     }
 
     .ektha-text {
-        font-size: 45vw;
+        font-size: 21vw;
         margin-bottom: -1rem;
     }
     
     .ektha-text2 {
-        font-size: 25vw;
+        font-size: 18vw;
     }
 }
 
 /* Very Small Mobile Adjustments */
 @media (max-width: 320px) {
     .ektha-text {
-        font-size: 50vw;
+        font-size: 20vw;
     }
     
     .ektha-text2 {
-        font-size: 30vw;
+        font-size: 22vw;
     }
 }
+
 
 
 
@@ -349,7 +370,425 @@ h2 {
     animation: gradientAnimation 5s ease-in-out infinite; /* Apply animation */
 }
 
+/*main events*/
 
 
+.containerr {
+    width: 100%;
+        max-width: 800px;
+        height: 500px;
+        display: flex;
+        gap: 1.25rem;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      
+  
+      .card {
+        flex: 1;
+        transition: all 400ms ease;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+      }
+  
+      /* Initial staggered positioning */
+      .card:nth-child(odd) {
+        transform: translateY(-20px);
+      }
+      
+      .card:nth-child(even) {
+        transform: translateY(20px);
+      }
+  
+      /* Hover effects */
+      @media (hover: hover) {
+        .containerr:hover .card:not(:hover) {
+          filter: grayscale(100%);
+          flex: 1;
+        }
+      }
+  
+      .card:hover {
+        flex: 4;
+        transform: translateY(0);
+      }
+  
+      /* Image styling */
+      .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .containerr {
+          height: auto;
+          flex-direction: column;
+          padding: 20px;
+          gap: 1rem;
+        }
+  
+        .card {
+          width: 100%;
+          height: 200px;
+          flex: none;
+          transform: none !important;
+        }
+  
+        .card:hover {
+          flex: 2;
+          height: 300px;
+        }
+  
+        /* Optional: Disable hover effects on mobile */
+        .containerr:hover .card:not(:hover) {
+          filter: grayscale(100%);
+        }
+      }
+  
+      @media (max-width: 480px) {
+        .card {
+          height: 150px;
+        }
+  
+        .card:hover {
+          height: 300px;
+        }
+      }
+
+      .mainevent {
+        text-align: center;
+        font-style: italic;
+      }
+
+      /* Pro Show Section */
+.pro-show {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Title */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Card Container */
+.day-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Individual Card */
+.day-card {
+    width: 30%;
+    min-width: 100px;
+    height: 180px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.day-card img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.day-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: black;
+}
+
+.day-card:hover {
+    transform: scale(1.05);
+}
+
+/* Book Now Button */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #219150;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .day-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .day-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .pro-show {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+.pro-show-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.pro-show-title {
+    color: orange;
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 50px;
+}
+
+.pro-show-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 15px;
+}
+
+.day-card {
+    width: 250px;
+    height: 300px;
+    text-align: center;
+}
+
+.day-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.book-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.book-button button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+    background: #111;
+    color: #fff;
+}
+
+.footer-left {
+    max-width: 250px;
+}
+
+.footer-left h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffa500;
+}
+
+.footer-left p {
+    font-size: 14px;
+    margin: 8px 0;
+    color: #aaa;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin: 15px 0;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.social-icons a i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.social-icons a:hover {
+    background: #ff7f50;
+}
+
+.footer-links {
+    display: flex;
+    gap: 40px;
+}
+
+.links-box {
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.links-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links-box ul li {
+    margin-bottom: 10px;
+}
+
+.links-box ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.links-box ul li a:hover {
+    color: #ff7f50;
+}
 
 
+/* RESPONSIVE DESIGN */
+
+/* Tablets (1028px and below) */
+@media (max-width: 1028px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .footer-left {
+        margin-bottom: 20px;
+    }
+
+    .footer-links {
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+/* Small Tablets & Large Phones (720px and below) */
+@media (max-width: 720px) {
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-left {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px;
+    }
+
+    .footer-left {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .links-box {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Very Small Devices (320px and below) */
+@media (max-width: 320px) {
+    .footer {
+        padding: 15px;
+    }
+
+    .footer-left h2 {
+        font-size: 18px;
+    }
+
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .links-box {
+        padding: 15px;
+    }
+
+    .links-box ul li a {
+        font-size: 13px;
+    }
+}

@@ -26,6 +26,12 @@ window.onload = function () {
     window.scrollTo(0, 0);
 };
 
+//teams
+document.getElementById("bookNow").addEventListener("click", function() {
+    alert("Booking functionality coming soon!");
+});
+
+
 // Countdown
 function startCountdown() {
     // Set event date (March 5, 2025, 10:00 AM UTC)
