@@ -37,6 +37,7 @@ body {
 /* Navbar Responsive Adjustments */
 @media (max-width: 991px) {
     .navbar-brand img {
+        align-items: end;
         width: 45px !important;
     }
 }
