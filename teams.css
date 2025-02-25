@@ -1,63 +1,58 @@
 /* teams Card */
-
+.teams-head{
+  background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
+}
 
 .teams-text-intro{
-  font-family: 'Notable', sans-serif;
-  font-weight: 200;
-  font-size: 9.3vw; /* Covers the whole screen */
-  background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
-  background-size: 300% 300%; /* Make the gradient larger for smooth movement */
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 800;
+  font-size: 4.3vw; /* Covers the whole screen */
+  /* background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00); */
+  /* background-size: 300% 300%; Make the gradient larger for smooth movement */
+  /* -webkit-background-clip: text;
+  background-clip: text; */
+  /* color: transparent; */
   position: relative;
-  letter-spacing: 0.02em;
+  color: black;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  white-space: nowrap; /* Prevents line breaks */
   overflow: hidden;
   text-align: center;
   animation: gradientAnimation 5s ease-in-out infinite; /* Apply animation */
-  margin-top: 6rem;
+  margin-top: 7rem;
 }
 /* Teams Page CSS */
 
 
-.teams-text-intro2{
-  font-family: 'Notable', sans-serif;
-  font-weight: 200;
-  font-size: 9.3vw; /* Covers the whole screen */
-  background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
-  background-size: 300% 300%; /* Make the gradient larger for smooth movement */
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  position: relative;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  white-space: nowrap; /* Prevents line breaks */
-  overflow: hidden;
-  text-align: center;
-  animation: gradientAnimation 5s ease-in-out infinite; /* Apply animation */
-}
-
-.teams-text {
+.teams-text-intro2 {
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 800;
-  font-size: 15.3vw; /* Covers the whole screen */
+  font-size: 10.3vw; /* Covers the whole screen */
   line-height: 1;
-  background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
+  color: black;
+  /* background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
   background-size: 300% 300%; /* Make the gradient larger for smooth movement */
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  position: relative;
+  /* -webkit-background-clip: text;
+  background-clip: text; */
+  /* color: transparent;  */
+  /* position: relative; */
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  white-space: nowrap; /* Prevents line breaks */
+  white-space: nowrap;
   overflow: hidden;
   text-align: center;
-  animation: gradientAnimation 5s ease-in-out infinite; /* Apply animation */
 }
+
+.teams-text-intro3{
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 800;
+  color: black;
+  letter-spacing: 0.5rem ;
+  font-size: 8.3vw; /* Covers the whole screen */
+  /* background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00); */
+}
+
+
 /* Main Container */
 
 .teamhead{
@@ -71,161 +66,84 @@
   color: #e9a401;
 }
 
-/* .profile-container:hover */
-.row {
-  display: flex;
-  justify-content: center; /* Centers content */
-  gap: 20px; /* Adds space between cards */
+/*--------------------------- Profile Card----------------------------- */
+
+
+/* Section 1 */
+
+.team-section-head1{
+  font-family: 'Outfit';
+  letter-spacing: 0.2rem;
+  font-size: 20rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #e7b93c;
+  text-decoration: underline;
 }
 
-.profile-container {
-  width: 300px; /* Ensure each card has a fixed width */
+.card {
+  background-color: #e7b93c;
+  width: 100%;
+  height: 400px;
+  max-width: 350px;
+  min-width: 100%;
+  min-height: 400px;
+  max-height: 400px;
+  margin: 0 auto 20px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 15px;
-  transition: 1s all ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(231, 185, 60, 0.8), 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.profile-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('https://www.dropbox.com/s/ce3avjentos3rp3/profile-pcs.jpg?raw=1') no-repeat center center/cover;
-  z-index: -1;
-  opacity: 1;  
-  transition: all .5s ease-in;
-}
-
-.profile-container:hover:before {
-  opacity: 0;
-  transition: all .5s ease;
-}
-
-
-/* Profile Card Wrapper */
-.profile-wrapper {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.profile-wrapper::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, #2371ae 0%, #bb47d4 100%);
-  transform: skew(30deg) translateX(125%);
-  opacity: 0.9;
-  transition: all 0.6s ease;
-}
-
-.profile-wrapper::after{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, #2371ae 0%, #bb47d4 100%);
-  transform: skew(30deg) translateX(-125%);
-  opacity: 0.9;
-  transition: all 0.6s ease;
-}
-
-.profile-container:hover .profile-wrapper::after{
-  transform: skew(30deg) translateX(125%);
-  background: linear-gradient(to right, #bb47d4 0%, #2371ae 100%);
-  
-}
-.profile-container:hover .profile-wrapper::before{
-  transform: skew(30deg) translateX(-125%);
-  background: linear-gradient(to right, #bb47d4 0%, #2371ae 100%);
-}
-
-/* Profile Card */
-.profile-card {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem 10px;
-  position: relative;
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-
-.profile-container:hover .profile-card {
-  opacity: 1;
-  transition: all 0.6s ease;
-  transition-delay: 0.2s;
-}
-
-.profile-card .fav-icon {
-  color: #ec0e0e;
-  position: absolute;
-  top: 5px;
-  left: 10px;
-  font-size: 21px;
-  cursor: pointer;
-} 
-
-/* Profile Picture */
-.profile-card img {
-  display: block;
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
+.card-img-top {
+  height: 250px;
   object-fit: cover;
-  border-radius: 50%;
-  margin: 1rem 0;
-  border: 2px solid transparent;
-  background-image: linear-gradient(white, white), 
-                    linear-gradient(to right, green, gold);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  /* border: 2px solid #1999; */
-  position: relative;
 }
 
-.profile-card  h2 {
-  line-height: 1.2;
-  color: #ffffff;
-}
-.profile-card  h4 {
-  line-height: 1.5;
-  color: #444;
+.card-body {
+  background: white;
+  padding: 15px;
 }
 
-.profile-card  p {
-  line-height: 1.2;
-  color: #333;
-  margin: 10px 0;
+.name-overlay {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.89);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
 }
 
-/* Profile Icons */
-.profile-card .icons {
+.card-container {
   display: flex;
-  color: #333;
-  width: 90%;
-  justify-content: space-evenly;
-  font-size: 1.4rem;
-  margin: 5px 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.profile-card .icons i:hover {
-  background-image: linear-gradient(to right, #bb47d4 0%, #2371ae 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  cursor: pointer;
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .card {
+      min-width: 100%;
+      margin-bottom: 20px;
+  }
+}
+.name-text{
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+.role-text{
+  color: slategray;
+  font-size: 0.8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
 }
