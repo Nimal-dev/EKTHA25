@@ -4,11 +4,18 @@ html {
 }
 
 body {
+    /* width: 100%; */
+    /* overflow: hidden; */
     font-family: 'Manrope';
     background-color: #0c0c0c;
 }
 
-
+#intro{
+    background-image: url("assets/banner2.png") ;
+    background-repeat: no-repeat;
+    background-position: center; /* Position the image (center, top, right, etc.) */
+    background-size: cover;
+}
 
 /* NAVBAR STYLES */
 .navbar {
@@ -139,21 +146,24 @@ body {
     text-transform: uppercase;
     white-space: nowrap;
     text-align: center;
-    animation: gradientAnimation 5s ease-in-out infinite;
     margin-top: 3%; /* Adjusted for better positioning */
     padding-bottom: 1%;
     width: 100%;
     overflow: visible;
     display: block;
+    text-shadow: 0 0 10px rgba(255, 174, 0, 0.5),
+                 0 0 20px rgba(255, 174, 0, 0.3),
+                 0 0 30px rgba(255, 174, 0, 0.2);
 }
 
 .ektha-text2 {
-    font-family: 'Notable', sans-serif;
-    font-weight: 200;
-    font-size: 5vw;
+    font-family: 'Mrs Sheppards', sans-serif;
+    font-weight: 400;
+    font-size: 4.5vw;
     background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
     background-size: 300% 300%;
     -webkit-background-clip: text;
+    transform: rotate(-10deg);
     background-clip: text;
     color: transparent;
     letter-spacing: 0.05em;
@@ -161,6 +171,7 @@ body {
     white-space: nowrap;
     text-align: center;
     animation: gradientAnimation 5s ease-in-out infinite;
+    text-shadow: 2px 0px 8px gold;
 }
 
 /* Mobile Responsive Adjustments */

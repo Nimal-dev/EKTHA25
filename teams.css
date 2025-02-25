@@ -79,6 +79,7 @@
   text-transform: uppercase;
   color: #e7b93c;
   text-decoration: underline;
+  /* margin-top: 40rem; */
 }
 
 .card {
@@ -146,4 +147,29 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
   letter-spacing: 0.1rem;
+}
+
+
+/* ------------------------------------------------------ */
+.container{
+  margin-top: 20rem;
+  /* position:absolute; */
+}
+.title{
+  font-weight: 800;
+  color: transparent;
+  font-size:10rem;
+  background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+  background-position: 40% 50%;
+  -webkit-background-clip: text;
+  position:relative;
+  text-align:center;
+  line-height:90px;
+  letter-spacing: -8px;
+}
+.subtitle{
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:10px;
 }
