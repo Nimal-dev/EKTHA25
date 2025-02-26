@@ -254,15 +254,17 @@
         <div class="footer-left">
             <h1 class="ektha-footer-text">EKTHA'25</h1>
             <div class="social-icons">
-                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.instagram.com/ektha.25?igsh=MWlvNXhkNHpyZDhsNA=="><i class="bi bi-instagram"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
                 <a href="#"><i class="bi bi-twitter-x"></i></a>
             </div>
             <p>2025 © All Rights Reserved</p>
         </div>
+
+        <!-- Google Map Location of the EVENT -->
         <div class="evntloc">
             <h3>Event Location</h3>
-            <div id="map" style="width: 25rem; height: 15rem;"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2353.900921398768!2d76.739573!3d8.800327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05e6737fb08e1d%3A0xe9a7bc5ee867b5af!2sUKF%20College%20of%20Engineering%20and%20Technology!5e1!3m2!1sen!2sus!4v1740565553929!5m2!1sen!2sus" width="600" height="300" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
        
         <div class="footer-links">
@@ -303,35 +305,5 @@
 
 
 <script src="script.js"></script>
-
-
-<script>
-    
-    const map = new window.google.maps.Map(document.getElementById("map"), {
-      center: { lat: 15.1632, lng: 76.6413 },
-      zoom: 3.9,
-    });
-
-</script>
-<script async defer 
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWED24ut0NZVXBKwkiynWByxmjj__fVcw&callback=initMap">
-    </script>
-<!-- <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCWED24ut0NZVXBKwkiynWByxmjj__fVcw&libraries=places" type="text/javascript"></script> -->
-<script>
-    function initMap() {
-        // Replace with your event location coordinates
-        var eventLocation = { lat: 8.800717046755539, lng: 76.73946979330748 };
-        var map = new google.maps.Map(document.getElementById("map"), {
-            center: eventLocation,
-            zoom: 15
-        });
-
-        var marker = new google.maps.Marker({
-            position: eventLocation,
-            map: map,
-            title: "Event Location"
-        });
-    }
-</script>
 
 </html>
