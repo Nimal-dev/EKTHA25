@@ -10,6 +10,7 @@ body {
     background-color: #0c0c0c;
 }
 
+
 #intro{
     background-image: url("assets/banner2.png") ;
     background-repeat: no-repeat;
@@ -244,10 +245,12 @@ body {
 
 
 /* DATE STYLE */
-#date_Container {
-    width: 90vw;
-    background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
+.date-col {
+    /* width: 20%; */
+    background-color: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
     filter: url(#threshold) blur(0.6px);
+    /* overflow: hidden; */
+    text-align: start;
 }
 
 #text1,
@@ -255,17 +258,18 @@ body {
     position: absolute;
     width: 100%;
     /* height: 11rem; */
+    
     display: inline-block;
     letter-spacing: 1rem;
     font-weight: 600;
     font-family: "Kanit", sans-serif;
-    font-size: 80pt;
+    font-size: 55pt;
     background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
     text-align: center;
     user-select: none;
 }
 
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
     #text1,
     #text2 {
         font-size: 30pt;
@@ -275,7 +279,7 @@ body {
         width: 40vw;
     }
     
-}
+} */
 
 
 
