@@ -1,13 +1,18 @@
 /* Base styles remain unchanged */
-html {
-    scroll-behavior: smooth;
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #0c0c0c;
 }
 
-body {
-    /* width: 100%; */
-    /* overflow: hidden; */
-    font-family: 'Manrope';
-    background-color: #0c0c0c;
+/* Ensure sections expand to full width */
+section {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -39,7 +44,7 @@ body {
 @media (max-width: 991px) {
     .navbar-brand img {
         align-items: end;
-        width: 45px !important;
+        /* width: 45px !important; */
     }
 }
 /* Navbar Links */
@@ -246,7 +251,6 @@ body {
 
 /* DATE STYLE */
 .date-col {
-    /* width: 20%; */
     background-color: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
     filter: url(#threshold) blur(0.6px);
     /* overflow: hidden; */
@@ -302,6 +306,7 @@ body {
 
 .countdown-wrapper {
     text-align: center;
+    margin-top: 10%;
 }
 
 h2 {
@@ -565,6 +570,7 @@ h2 {
       .mainevent {
         text-align: center;
         font-style: italic;
+        margin-top: 10%;
       }
 
       /* Pro Show Section */
