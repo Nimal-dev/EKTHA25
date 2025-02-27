@@ -924,20 +924,21 @@ button:hover {
 @keyframes marquee-right-to-left {
     from { transform: translateX(100%); }
     to { transform: translateX(-100%); }
-}
-
-@keyframes marquee {
+  }
+  
+  @keyframes marquee {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
-}
-@keyframes scroll {
+  }
+  
+  @keyframes scroll {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
-}
- /* Colored Marquee */
- .marquee-content {
+  }
+  
+  .marquee-content {
     margin-top: 5%;
-    height: 50rem;
+    height: 30vh;
     overflow: hidden;
     white-space: nowrap;
     color: white;
@@ -945,57 +946,93 @@ button:hover {
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 10px;
-    width:100%;
-    
-}
-.marquee-inner1{
+    width: 100%;
+  }
+  
+  .marquee-inner1 {
     transform: rotate(5deg);
-}
-
-.marquee1 {
-    
+  }
+  
+  .marquee1 {
     font-size: 3vw;
     display: flex;
     width: max-content;
     animation: scroll 20s linear infinite;
     background-color: #e7b93c;
     text-align: center;
-}
-
-.marquee1 p {
+  }
+  
+  .marquee1 p {
     text-align: center;
     margin-right: 20px;
     font-weight: bold;
     color: #0c0c0c;
-}
-
-
-
-/* Marquee text Design */
-
-.marquee-text1{
+  }
+  
+  .marquee-text1 {
     font-size: 3vw;
-}
-
-
-/* Marquee 2 */
-.marquee-inner2{
+  }
+  
+  .marquee-inner2 {
     transform: rotate(-3deg);
-}
-
-.marquee2 {
-    
-    
+  }
+  
+  .marquee2 {
     display: flex;
     width: max-content;
     animation: scroll 20s linear infinite;
     text-align: center;
-}
-
-.marquee2 p {
+  }
+  
+  .marquee2 p {
     font-size: 3vw;
     text-align: center;
     margin-right: 20px;
     font-weight: bold;
-    color: #e7b93c
-}
+    color: #e7b93c;
+  }
+  
+  /* Adding responsive styles */
+  @media screen and (max-width: 768px) {
+    .marquee-content {
+      height: 12vh;
+      padding: 10px;
+    }
+    
+    .marquee1 p, .marquee2 p, .marquee-text1 {
+      font-size: 5vw;
+      margin-right: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .marquee-content {
+      height: 18vh;
+      padding: 8px;
+    }
+    
+    .marquee1 p, .marquee2 p, .marquee-text1 {
+      font-size: 6vw;
+      margin-right: 10px;
+    }
+  
+    .marquee-inner1 {
+      transform: rotate(3deg);
+    }
+    
+    .marquee-inner2 {
+      transform: rotate(-2deg);
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .marquee-content {
+      height: 8vh;
+      padding: 5px;
+    }
+    
+    .marquee1 p, .marquee2 p, .marquee-text1 {
+      font-size: 7vw;
+      margin-right: 8px;
+    }
+  }
