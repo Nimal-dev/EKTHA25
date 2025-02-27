@@ -989,6 +989,10 @@ button:hover {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
+  @keyframes scroll-right {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
   
   .marquee-content {
     margin-top: 2%;
@@ -1034,7 +1038,7 @@ button:hover {
   .marquee2 {
     display: flex;
     width: max-content;
-    animation: scroll 20s linear infinite;
+    animation: scroll-right 20s linear infinite;
     text-align: center;
   }
   
