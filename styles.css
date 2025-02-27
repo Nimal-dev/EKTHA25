@@ -192,6 +192,17 @@ section {
     text-shadow: 2px 0px 8px gold;
 }
 
+
+/* Scroll adjustments */
+/* Hide scrollbar but keep functionality */
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hidden {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 /* Mobile Responsive Adjustments */
 /* @media (max-width: 1024px) {
     .ektha-text {

@@ -158,10 +158,10 @@
                 </div>
             </div>
             
-            <!-- Mobile view (horizontally scrollable) -->
+            <!-- Mobile view (auto-scrolling) -->
             <div class="d-md-none">
-                <div class="overflow-auto ">
-                    <div class="d-flex flex-nowrap align-items-center" style="min-width: 800px;">
+                <div class="overflow-auto scrollbar-hidden" id="logo-scroller">
+                    <div class="d-flex flex-nowrap" style="min-width: 800px;" id="logo-container">
                         <div class="px-3 text-center" style="min-width: 200px;">
                             <img class="img-fluid" style="width: 180px;" src="assets/masquerade.png" alt="Logo 1">
                         </div>
@@ -388,7 +388,7 @@
 
 <!-- Custom Script -->
 <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
-
+<script src="logoauto.js"></script>
 
 <script src="script.js"></script>
 

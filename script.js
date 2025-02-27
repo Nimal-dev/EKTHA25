@@ -155,3 +155,6 @@ document.getElementById("bookNow").addEventListener("click", function() {
     alert("Booking functionality coming soon!");
 });
 
+
+
+// Logos Section scroll
