@@ -252,6 +252,7 @@ section {
 
 /* DATE STYLE */
 .date-col {
+   margin-top: 5%;
     background: white;
     background-color: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
     /* filter: url(#threshold) blur(0.6px); */
@@ -937,7 +938,7 @@ button:hover {
   }
   
   .marquee-content {
-    margin-top: 5%;
+    margin-top: 2%;
     height: 30vh;
     overflow: hidden;
     white-space: nowrap;
