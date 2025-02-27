@@ -127,6 +127,16 @@ section {
 
 
 /* INTRO SECTION */
+.ukfintrologo{
+    width: 30rem;
+    margin-top: 4rem;
+}
+@media (max-width: 480px) {
+    .ukfintrologo {
+        width: 12rem;
+
+    }
+}
 #intro {
     padding-top: clamp(60px, 10vh, 100px);
     min-height: 100vh;
