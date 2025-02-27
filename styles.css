@@ -936,6 +936,7 @@ button:hover {
 }
  /* Colored Marquee */
  .marquee-content {
+    margin-top: 5%;
     height: 50rem;
     overflow: hidden;
     white-space: nowrap;
@@ -984,7 +985,7 @@ button:hover {
 
 .marquee2 {
     
-    font-size: 3vw;
+    
     display: flex;
     width: max-content;
     animation: scroll 20s linear infinite;
@@ -992,6 +993,7 @@ button:hover {
 }
 
 .marquee2 p {
+    font-size: 3vw;
     text-align: center;
     margin-right: 20px;
     font-weight: bold;
