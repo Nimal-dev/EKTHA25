@@ -154,6 +154,7 @@ section {
     white-space: nowrap;
     text-align: center;
     /* margin-top: 0%; */
+    padding-top: 1rem;
     padding-bottom: 1%;
     width: 100%;
     overflow: visible;
@@ -251,24 +252,26 @@ section {
 
 /* DATE STYLE */
 .date-col {
+    background: white;
     background-color: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
-    filter: url(#threshold) blur(0.6px);
+    /* filter: url(#threshold) blur(0.6px); */
     /* overflow: hidden; */
-    text-align: start;
+    /* text-align: start; */margin-bottom: 3vw;
 }
 
 #text1,
 #text2 {
     position: absolute;
     width: 100%;
+    color: white;
     /* height: 11rem; */
-    
+    overflow: hidden;
     display: inline-block;
     letter-spacing: 1rem;
     font-weight: 600;
     font-family: "Kanit", sans-serif;
-    font-size: 55pt;
-    background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
+    font-size: 8vw;
+    /* background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00); */
     text-align: center;
     user-select: none;
 }
@@ -299,14 +302,14 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 30vh;
     text-align: center;
     color: white;
 }
 
 .countdown-wrapper {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 2%;
 }
 
 h2 {
