@@ -1,0 +1,77 @@
+
+
+/* EVENTS HEAD */
+.event-container{
+    background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
+}
+.event-head{
+    margin-top: 5%;
+    width: 100%;
+    padding-bottom: 2%;
+    text-align: center;
+    
+}
+.event-head1{
+    font-family: 'Cinzel Decorative', serif;
+    font-weight: 800;
+    color: black;
+    position: relative;
+    padding-top: 3%;
+    font-size: 8.5vw;
+}
+.event-head2{
+    color: black;
+    position: relative;
+    font-weight: 700;
+    /* padding-top: 1%; */
+    font-size: 5.5vw;
+}
+
+/* Responsive Design */
+@media (max-width: 1195px) {
+    .event-head{
+        margin-top: 8%;
+    }
+}
+@media (max-width: 923px) {
+    .event-head{
+        margin-top: 10%;
+    }
+}
+@media (max-width: 800px) {
+    .event-head{
+        margin-top: 13%;
+    }
+}
+@media (max-width: 660px) {
+    .event-head{
+        margin-top: 16%;
+    }
+}
+@media (max-width: 558px) {
+    .event-head{
+        margin-top: 20%;
+    }
+}
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+    .event-head{
+       margin-top: 23%;
+    }
+}
+/* Very Small Devices (380px and below) */
+@media (max-width: 430px) {
+    .event-head{
+        width: 100%;
+        padding-top: 1rem;
+        margin-top:28%;
+    }
+}
+
+
+
+/* -------------------Event Cards--------------------- */
+.event-card{
+    max-width: 301;
+    height: 398;
+}
