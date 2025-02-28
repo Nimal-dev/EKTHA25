@@ -51,7 +51,14 @@
 }
 
 .about-head2 img{
-    width: 20rem;
+    width: 30rem;
+}
+
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+    .about-head2 img{
+        width: 15rem;
+    }
 }
 
 .about-head1 p{
@@ -68,9 +75,7 @@
     display: flex;
     align-items: center;
 }
-.about-ukf-container{
-    margin-bottom: 5rem;
-}
+
 .about-ukf-head1{
     padding-left: 5vw;
 }
@@ -91,6 +96,11 @@
 .aboutukfpara{
     color: white;
     text-align: justify;
+}
+
+.aboutpara a{
+    text-decoration: none;
+    color: #e9a401;
 }
 /* Responsive Design */
 @media (max-width: 1195px) {

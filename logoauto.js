@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 20); // Control smoothness of animation
         
         // Stop scrolling when user interacts with the container
-        scroller.addEventListener('touchstart', () => {
-            clearInterval(autoScroll);
-        });
+        // scroller.addEventListener('touchstart', () => {
+        //     clearInterval(autoScroll);
+        // });
         
         // Optional: restart auto-scroll after user interaction ends
         scroller.addEventListener('touchend', () => {
