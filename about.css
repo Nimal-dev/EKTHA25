@@ -34,10 +34,19 @@
 /* Mobile Phones (480px and below) */
 @media (max-width: 480px) {
     .about-text1{
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
     .about-text2{
-        font-size: 5.5rem;
+        font-size: 4.5rem;
+    }
+}
+/* Very Small Devices (380px and below) */
+@media (max-width: 350px) {
+    .about-text1{
+        font-size: 2.5rem;
+    }
+    .about-text2{
+        font-size: 3.5rem;
     }
 }
 
