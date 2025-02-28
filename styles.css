@@ -760,6 +760,9 @@ button:hover {
     cursor: pointer;
 }
 /* Footer Styles */
+.foots{
+    align-items: center;
+}
 .ektha-footer-text {
     font-family: 'Cinzel Decorative', serif;
 }
@@ -1094,3 +1097,7 @@ button:hover {
       margin-right: 8px;
     }
   }
+
+
+  /* Echoes card */
+  
