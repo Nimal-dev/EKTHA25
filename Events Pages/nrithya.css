@@ -1,5 +1,156 @@
 .nrithya-container{
     display: flex;
     justify-content: center;
-    margin-top: 8rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
 }
+.nrithya-img-col img{
+    width: 22.6rem;
+}
+
+
+.event-row{
+    width: 70rem;
+}
+
+
+
+.event-details{
+    background-color: #1d1d1d;
+    text-align: justify;
+    border-radius: 0px 20px 20px 0px;
+}
+.reg-btn{
+    margin-top: 1rem;
+    text-align: center;
+}
+.event-register-btn{
+    width: 40rem;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 2rem;
+    background-color: white;
+    font-weight: 600;
+    font-family: "Funnel Display";
+    text-decoration: none;
+    color: black;
+    
+}
+
+.event-register-btn:hover, .event-register-btn:focus{
+    background-color: gold;
+    color: black;
+    box-shadow: 0 0.5em 0.5em -0.4em goldenrod;
+    transform: translateY(-0.25em);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets (1028px and below) */
+@media (max-width: 1011px) {
+    .event-details{
+        border-radius: 0px 20px 20px 0px;
+        width:37.5rem;
+    }
+    .nrithya-img-col img{
+        text-align: center;
+        width: 22.6rem;
+    }
+    .event-register-btn{
+        width: 30rem;
+    }
+
+}
+
+@media (max-width: 916px) {
+    .event-details{
+        border-radius: 0px 20px 20px 0px;
+        width:37.5rem;
+    }
+    .nrithya-img-col img{
+        text-align: center;
+        width: 22.6rem;
+    }
+    .event-register-btn{
+        width: 30rem;
+    }
+
+}
+/* mobile phones (500px and below) */
+@media (max-width: 500px) {
+    .event-details{
+        border-radius: 0px 0px 20px 20px;
+        width: 22.5rem;
+    }
+    .nrithya-img-col{
+        text-align: center;
+        /* width: 20.6rem; */
+    }
+    .event-register-btn{
+        width: 20rem;
+    }
+}
+
+
+/* Event Text */
+.event-text h1{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    font-weight: 800;
+    font-size: 1.6rem;
+    text-align: start;
+    color: white;
+    font-family: "Funnel Display";
+}   
+
+.event-text p{
+    /* margin-top: 2rem; */
+    font-weight: 300;
+    padding-left: 10px;
+    padding-right: 40px;
+    font-size: 1rem;
+    color: white;
+    font-family: "Funnel Display";
+}
+.event-text h3{
+    /* margin-top: 2rem; */
+    font-weight: 300;
+    padding-left: 10px;
+    padding-right: 40px;
+    font-size: 1rem;
+    color: white;
+    font-family: "Funnel Display";
+}
+
+/* Prize */
+.prize-table{
+    margin-left: 10px;
+    font-family: "Funnel Display";
+    color: white;
+    border: none;
+    
+}
+
+/* Coordinators */
+.Coordinators-head{
+    font-family: "Funnel Display";
+    margin-top:1rem;
+    margin-left: 10px;
+    color: white;
+}
+.Coordinators-table{
+    margin-left: 10px;
+    font-family: "Funnel Display";
+    color: white;
+    border: none;
+    
+}
+
+.Coordinators-table a{
+    text-decoration: none;
+    color: white;
+    
+}
+
