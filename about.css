@@ -4,7 +4,7 @@
     align-items: center;
     padding-left: 5vw;
     margin-top: 10rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 .about-head-row{
     display: flex;
@@ -60,4 +60,62 @@
 
 .aboutpara{
     text-align: justify;
+}
+
+
+/* ABOUT UKFCET STYLES */
+.about-ukf-head-row{
+    display: flex;
+    align-items: center;
+}
+.about-ukf-container{
+    margin-bottom: 5rem;
+}
+.about-ukf-head1{
+    padding-left: 5vw;
+}
+.about-ukf-text1{
+    
+    font-size: 3.5rem;
+    color: white;
+}
+
+.about-ukf-text2{
+    margin-top: -10rem;
+    color: #e9a401;
+    font-size: 6.5rem;
+    font-weight: 800;
+    
+}
+
+.aboutukfpara{
+    color: white;
+    text-align: justify;
+}
+/* Responsive Design */
+@media (max-width: 1195px) {
+    .about-ukf-text1{
+        font-size: 3.5rem;
+    }
+    .about-ukf-text2{
+        font-size: 5.5rem;
+    }
+}
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+    .about-ukf-text1{
+        font-size: 2.5rem;
+    }
+    .about-ukf-text2{
+        font-size: 4.5rem;
+    }
+}
+/* Very Small Devices (380px and below) */
+@media (max-width: 350px) {
+    .about-ukf-text1{
+        font-size: 2.5rem;
+    }
+    .about-ukf-text2{
+        font-size: 3.5rem;
+    }
 }
