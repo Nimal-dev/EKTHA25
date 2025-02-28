@@ -1,0 +1,54 @@
+
+
+.about-container{
+    align-items: center;
+    padding-left: 5vw;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+.about-head-row{
+    display: flex;
+    align-items: center;
+}
+.about-text1{
+    font-size: 6.5rem;
+    color: white;
+
+}
+.about-text2{
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 9.5rem;
+    font-weight: 600;
+    color: orange;
+
+}
+/* Responsive Design */
+@media (max-width: 1195px) {
+    .about-text1{
+        font-size: 3.5rem;
+    }
+    .about-text2{
+        font-size: 5.5rem;
+    }
+}
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+    .about-text1{
+        font-size: 3.5rem;
+    }
+    .about-text2{
+        font-size: 5.5rem;
+    }
+}
+
+.about-head2 img{
+    width: 20rem;
+}
+
+.about-head1 p{
+    color: white;
+}
+
+.aboutpara{
+    text-align: justify;
+}
