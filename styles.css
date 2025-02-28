@@ -633,15 +633,17 @@ h2 {
       /* Responsive adjustments */
       @media (max-width: 768px) {
         .containerr {
+        width: 450px;
           height: auto;
           flex-direction: column;
           padding: 20px;
           gap: 1rem;
+          align-items: center;
         }
   
         .card {
           width: 100%;
-          height: 200px;
+          /* height: 200px; */
           flex: none;
           transform: none !important;
         }
@@ -658,20 +660,35 @@ h2 {
       }
   
       @media (max-width: 480px) {
-        .card {
-          height: 150px;
-        }
-  
-        .card:hover {
-          height: 300px;
-        }
+        .containerr {
+            /* width: 500px; */
+            height: auto;
+            flex-direction: column;
+            padding: 20px;
+            gap: 1rem;
+            align-items: center;
+          }
+    
+          .card {
+            width: 70%;
+            /* height: 400px; */
+            /* flex: none;
+            transform: none !important; */
+          }
+    
+          .card:hover {
+            flex: 2;
+            height: 300px;
+          }
       }
 
       .mainevent {
         overflow: hidden;
         text-align: center;
-        font-style: italic;
         margin-top: 10%;
+      }
+      .mainevent-text{
+        font-size: 2.5rem;
       }
 
       /* Pro Show Section */
