@@ -576,244 +576,300 @@ h2 {
         }
     }
 
-    .main-event {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-        margin: 0;
-        margin-top: 50px;
-        font-family: Arial, sans-serif;
-        overflow: hidden;
-    }
 
-     .main-event-title {
-        text-align: center;
-        font-family: 'Bebas Neue', sans-serif;
-        font-size: 10rem;
-     }
-      .mainevent {
-        display: flex;
-        gap: 20px;
-        perspective: 1500px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-      .card1 {
-        width: 260px;
-        height: 360px;
-        position: relative;
-        transform-style: preserve-3d;
-        transition: transform 0.5s ease-in-out;
-        cursor: pointer;
-    }
-    .card1.flipped {
-        transform: rotateY(180deg);
-    }
-    .card1 .card-face {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border-radius: 15px;
-        backface-visibility: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 26px;
-        font-weight: bold;
-        text-align: center;
-        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
-    }
-    .card1 .front {
-        background-size: cover;
-        background-position: center;
-    }
-    .card1 .back {
-        background: rgba(0, 0, 0, 0.85);
-        transform: rotateY(180deg);
-        flex-direction: column;
-    }
-    .register-btn {
-        margin-top: 10px;
-        padding: 6px 12px;
-        background: linear-gradient(45deg, #ff416c, #ff4b2b);
-        border: none;
-        border-radius: 6px;
-        color: white;
-        font-size: 12px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .register-btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0px 5px 15px rgba(255, 75, 43, 0.5);
-    }
-    @media (max-width: 768px) {
-        body {
-            flex-direction: column;
-            overflow: auto;
-            height: auto;
-            padding: 20px;
-        }
-        .card1 { width: 200px; height: 300px; }
-    }
-    @media (max-width: 480px) {
-        .card1 { width: 160px; height: 240px; }
-    }
-    @media (max-width: 320px) {
-        .card1 { width: 140px; height: 200px; }
-    }
 
 
 /*main events*/
 
 
-
-
-      /* Pro Show Section */
-      .pro-show {
-        width: 80%;
-        max-width: 600px;
-        margin: 50px auto;
-        padding: 20px;
-        background: white;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-    }
-    
-    /* Title */
-    h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-    
-    .day-card {
-        width: 200px; /* Maintain 4:5 aspect ratio */
-        height: 250px;
-        background-color: lightgray;
+.containerr {
+    width: 800px;
+        max-width: 800px;
+        height: 300px;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
+        gap: 1.25rem;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      
+  
+      .card {
+        flex: 1;
+        transition: all 400ms ease;
         cursor: pointer;
-        transition: transform 0.3s ease;
         overflow: hidden;
         position: relative;
-    }
-    
-    .day-card img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Ensure full image coverage */
-        border-radius: 5px;
-    }
-    
-    /* Hide the text inside the card */
-    .day-card p {
-        display: none; /* Remove the "Day 1" text */
-    }
-    
-    /* Book Now button */
-    .book-button {
-        display: flex;
-        justify-content: center;
-        margin-top: 5px;
-        margin-bottom: 10px;
-    }
-    
-    .book-button button {
-        background-color: green;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-        width: 100%;
-        max-width: 150px;
-    }
-    
-    /* Responsive Design */
-    @media (max-width: 768px) {
-        .day-cards {
-            flex-direction: column;
-            align-items: center;
+      }
+  
+      /* Initial staggered positioning */
+      .card:nth-child(odd) {
+        transform: translateY(-20px);
+      }
+      
+      .card:nth-child(even) {
+        transform: translateY(20px);
+      }
+  
+      /* Hover effects */
+      @media (hover: hover) {
+        .containerr:hover .card:not(:hover) {
+          filter: grayscale(100%);
+          flex: 1;
         }
-    
-        .day-card {
-            width: 80%;
-        }
-    }
-    
-    @media (max-width: 480px) {
-        .pro-show {
-            width: 95%;
-        }
-    
-        h2 {
-            font-size: 20px;
-        }
-    
-        button {
-            font-size: 14px;
-            padding: 8px 15px;
-        }
-    }
-    
-    .pro-show-container {
-        text-align: center;
-        padding: 20px;
-        margin-top: 50px;
-    
-    }
-    
-    .pro-show-title {
-        color: orange;
-        font-size: 56px;
-        font-weight: bold;
-        margin-bottom: 10px;
-        font-family: 'Bebas Neue', sans-serif;
-        margin-top: 50px;
-    }
-    
-    .pro-show-cards {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap; /* Ensures responsiveness */
-        gap: 15px;
-    }
-    
-    .day-card {
-        width: 200px;
-        height: 250px;
-        text-align: center;
-    }
-    
-    .day-card img {
+      }
+  
+      .card:hover {
+        flex: 4;
+        transform: translateY(0);
+      }
+  
+      /* Image styling */
+      .card img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 8px;
-    }
+      }
+  
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .containerr {
+        width: 450px;
+          height: auto;
+          flex-direction: column;
+          padding: 20px;
+          gap: 1rem;
+          align-items: center;
+        }
+  
+        .card {
+          width: 100%;
+          /* height: 200px; */
+          flex: none;
+          transform: none !important;
+        }
+  
+        .card:hover {
+          flex: 2;
+          height: 300px;
+        }
+  
+        /* Optional: Disable hover effects on mobile */
+        .containerr:hover .card:not(:hover) {
+          filter: grayscale(100%);
+        }
+      }
+  
+      @media (max-width: 480px) {
+        .containerr {
+            /* width: 500px; */
+            height: auto;
+            flex-direction: column;
+            padding: 20px;
+            gap: 1rem;
+            align-items: center;
+          }
     
-    .book-button {
-        display: flex;
-        justify-content: center;
-        margin-top: 15px;
-    }
+          .card {
+            width: 70%;
+            /* height: 400px; */
+            /* flex: none;
+            transform: none !important; */
+          }
     
-    .book-button button {
-        background-color: green;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
+          .card:hover {
+            flex: 2;
+            height: 300px;
+          }
+          /* Optional: Disable hover effects on mobile */
+        .containerr:hover .card:not(:hover) {
+            filter: grayscale(100%);
+          }
+      }
+      @media (max-width: 398px) {
+        .containerr {
+            width: 363px;
+            height: auto;
+            flex-direction: column;
+            padding: 20px;
+            gap: 1rem;
+            align-items: center;
+          }
+    
+          .card {
+            width: 80%;
+            /* height: 400px; */
+            /* flex: none;
+            transform: none !important; */
+          }
+          /* Optional: Disable hover effects on mobile */
+        .containerr:hover .card:not(:hover) {
+            filter: grayscale(100%);
+          }
+      }
+
+      .mainevent {
+        overflow: hidden;
+        text-align: center;
+        margin-top: 10%;
+      }
+      .mainevent-text{
+        font-size: 2.5rem;
+      }
+
+      /* Pro Show Section */
+.pro-show {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Title */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Card Container */
+.day-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Individual Card */
+.day-card {
+    width: 30%;
+    min-width: 100px;
+    height: 180px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.day-card img {
+    width: 100%;
+    /* height: 80%; */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.day-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: black;
+}
+
+.day-card:hover {
+    transform: scale(1.05);
+}
+
+/* Book Now Button */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #219150;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .day-cards {
+        flex-direction: column;
+        align-items: center;
     }
+
+    .day-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .pro-show {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+.pro-show-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.pro-show-title {
+    color: orange;
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 50px;
+}
+
+.pro-show-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 15px;
+}
+
+.day-card {
+    width: 250px;
+    height: 300px;
+    text-align: center;
+}
+
+.day-card img {
+    width: 100%;
+    /* height: 120px; */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.book-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.book-button button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
 /* Footer Styles */
 .foots{
     align-items: center;
