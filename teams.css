@@ -72,13 +72,13 @@
 /* Section 1 */
 
 .team-section-head1{
-  font-family: 'Outfit';
+  font-family: "Prompt";
   letter-spacing: 0.2rem;
   font-size: 20rem;
-  font-weight: bolder;
+  font-weight: 100;
   text-transform: uppercase;
   color: #e7b93c;
-  text-decoration: underline;
+  /* text-decoration: wavy; */
   /* margin-top: 40rem; */
 }
 
