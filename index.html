@@ -38,11 +38,11 @@
 <body>
 
     <!-- Preloader -->
-    <div id="preloader">
+    <!-- <div id="preloader">
             <svg viewBox="0 0 1500 1000">
                 <text x="50%" y="35%" text-anchor="middle" dominant-baseline="middle">EKTHA'25</text>
             </svg>
-        </div>
+        </div> -->
 
 
     <!-- Navbar -->
@@ -296,7 +296,16 @@
         <br></br>
     </div>
     <div class="containerr">
-        <div class="card">
+        <div class="day-card">
+            <img src="assets/EKTHA events/fejo.jpg" alt="Day 1">
+        </div>
+        <div class="day-card">
+            <img src="assets/EKTHA events/fejo.jpg" alt="Day 1">
+        </div>
+        <div class="day-card">
+            <img src="assets/EKTHA events/fejo.jpg" alt="Day 1">
+        </div>
+        <!-- <div class="card">
             <a href="event.html"><img class="img-fluid" 
                     src="assets/EKTHA events/Nrithya'25.jpg"
                     alt="card"></a>
@@ -306,7 +315,7 @@
         </div>
         <div class="card">
             <a href="event.html"><img src="assets/EKTHA events/Dance Bash.jpg" alt="card"></a>
-        </div>
+        </div> -->
     </div>
     </div>
 </section> 
@@ -388,5 +397,53 @@
 <script src="logoauto.js"></script>
 
 <script src="script.js"></script>
+<script>
+    document.querySelectorAll('.day-card').forEach(card => {
+    // Variables to track mouse position
+    let mouseX = 0;
+    let mouseY = 0;
+    let targetX = 0;
+    let targetY = 0;
+    let isHovering = false;
+    
+    // For smoother animation
+    const smoothFactor = 0.15; // Higher value = faster response
+    
+    // Update animation frame
+    function updateAnimation() {
+        if (!isHovering) return;
+        
+        // Smooth interpolation
+        targetX += (mouseX - targetX) * smoothFactor;
+        targetY += (mouseY - targetY) * smoothFactor;
+        
+        const xRotation = targetY * 20; // Rotation based on mouse Y position
+        const yRotation = -targetX * 20; // Rotation based on mouse X position
+        
+        // Apply transform
+        card.style.transform = `perspective(1000px) rotateX(${xRotation}deg) rotateY(${yRotation}deg) scale3d(1.05, 1.05, 1.05)`;
+        
+        requestAnimationFrame(updateAnimation);
+    }
+    
+    card.addEventListener('mousemove', function(e) {
+        const rect = this.getBoundingClientRect();
+        
+        // Calculate mouse position in normalized coordinates (-0.5 to 0.5)
+        mouseX = ((e.clientX - rect.left) / rect.width) - 0.5;
+        mouseY = ((e.clientY - rect.top) / rect.height) - 0.5;
+        
+        if (!isHovering) {
+            isHovering = true;
+            requestAnimationFrame(updateAnimation);
+        }
+    });
+    
+    card.addEventListener('mouseleave', function() {
+        isHovering = false;
+        this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+    });
+});
+    </script>
 
 </html>
