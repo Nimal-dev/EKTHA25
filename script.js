@@ -158,3 +158,8 @@ document.getElementById("bookNow").addEventListener("click", function() {
 
 
 // Logos Section scroll
+
+
+function flipCard(card) {
+    card.classList.toggle('flipped');
+}
