@@ -9,7 +9,6 @@
     <!-- Browser Tab Icon -->
     <link rel="shortcut icon" href="assets/Ektha_25_Final_-removebg-preview.png" type="image/x-icon">
 
-
     <!-- Boostrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- BootStrap CSS -->
@@ -29,21 +28,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
 
     <!-- AOS (Animate on Scroll) CSS -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
     <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
-
-    <!-- Preloader -->
-    <div id="preloader">
-            <svg viewBox="0 0 1500 1000">
-                <text x="50%" y="35%" text-anchor="middle" dominant-baseline="middle">EKTHA'25</text>
-            </svg>
-        </div>
-
 
     <!-- Navbar -->
     <nav class="navbar navbar-dark fixed-top">
@@ -71,7 +62,6 @@
 
             <!-- Centered Logo -->
             <a class="navbar-brand" href="#">
-
                 <img class="img-fluid" src="assets/Ektha_25_Final_-removebg-preview.png" alt="Logo">
             </a>
 
@@ -124,18 +114,15 @@
         </div>
     </nav>
 
-    <!-- background animations -->
-
     <!-- INTRO SECTION -->
     <section id="intro">
         <div class="container-fluid">
-            <div class="text-center">
+            <div class="text-center" data-aos="zoom-in" data-aos-duration="1200">
                 <img class="ukfintrologo img-fluid" src="assets/ukfnbalogowhite.png" alt="" srcset="">
             </div>
-            <h1 class="container-fluid ektha-text">EKTHA </h1>
-            <h4 class="ektha-text2">2025</h4>
+            <h1 class="container-fluid ektha-text" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">EKTHA </h1>
+            <h4 class="ektha-text2" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">2025</h4>
         </div>
-
     </section>
 
     <!-- Logos -->
@@ -143,23 +130,23 @@
         <div class="container mb-5 my-5">
             <!-- Desktop view (standard Bootstrap grid) -->
             <div class="row d-none d-md-flex align-items-center justify-content-center">
-                <div class="col-md-3 mb-5 text-center">
+                <div class="col-md-3 mb-5 text-center" data-aos="fade-right" data-aos-duration="800">
                     <img class="img-fluid" style="width: 20rem;" src="assets/sub3.png" alt="Logo 1">
                 </div>
-                <div class="col-md-3 mb-5 text-center">
+                <div class="col-md-3 mb-5 text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     <img class="img-fluid" src="assets/ukfnbalogowhite.png" alt="Logo 2">
                 </div>
-                <div class="col-md-3 mb-5 text-center">
+                <div class="col-md-3 mb-5 text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <img class="img-fluid" src="assets/natya-25-white-png.png" alt="Logo 3">
                 </div>
-                <div class="col-md-3 mb-5 text-center">
+                <div class="col-md-3 mb-5 text-center" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
                     <img class="img-fluid" src="assets/Tech Biennale LOGO.jpg" alt="Logo 4">
                 </div>
             </div>
 
             <!-- Mobile view (auto-scrolling) -->
-            <div class="d-md-none">
-                <div class="overflow-auto scrollbar-hidden  ]" id="logo-scroller">
+            <div class="d-md-none" data-aos="fade-up" data-aos-duration="800">
+                <div class="overflow-auto scrollbar-hidden" id="logo-scroller">
                     <div class="d-flex flex-nowrap align-items-center" style="min-width: 800px;" id="logo-container">
                         <div class="px-3 text-center" style="min-width: 200px;">
                             <img class="img-fluid" style="width: 180px;" src="assets/sub3.png" alt="Logo 1">
@@ -182,14 +169,11 @@
     </section>
 
     <!-- DATE -->
-    <section id="date">
+    <section id="date" data-aos="fade-in" data-aos-duration="1500">
         <div class="col col-md-12 col-sm-12 date-col">
             <span id="text1"></span>
             <span id="text2"></span>
         </div>
-        <!-- <div class="container text-center" id="date_Container">
-            
-        </div> -->
 
         <svg id="filters">
             <defs>
@@ -203,8 +187,7 @@
         </svg>
     </section>
 
-
-    <section id="marquee-section">
+    <section id="marquee-section" data-aos="fade-in" data-aos-duration="1200">
         <div class="marquee-content">
             <!-- marquee 2 -->
             <div class="marquee-inner2">
@@ -257,30 +240,27 @@
                     <p class="marquee-text3">2025</p>
                 </div>
             </div>
-
-
         </div>
     </section>
 
     <!-- CountDown Section -->
-    <section id="countdown">
-
+    <section id="countdown" data-aos="fade-up" data-aos-duration="1000">
         <div class="countdown-wrapper">
-            <h2>Event Starts In:</h2>
-            <div class="countdown-timer">
-                <div class="countdown-box">
+            <h2 data-aos="fade-up" data-aos-duration="800">Event Starts In:</h2>
+            <div class="countdown-timer" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <div class="countdown-box" data-aos="flip-left" data-aos-duration="800" data-aos-delay="300">
                     <span id="days">00</span>
                     <small>Days</small>
                 </div>
-                <div class="countdown-box">
+                <div class="countdown-box" data-aos="flip-left" data-aos-duration="800" data-aos-delay="400">
                     <span id="hours">00</span>
                     <small>Hours</small>
                 </div>
-                <div class="countdown-box">
+                <div class="countdown-box" data-aos="flip-left" data-aos-duration="800" data-aos-delay="500">
                     <span id="minutes">00</span>
                     <small>Minutes</small>
                 </div>
-                <div class="countdown-box">
+                <div class="countdown-box" data-aos="flip-left" data-aos-duration="800" data-aos-delay="600">
                     <span id="seconds">00</span>
                     <small>Seconds</small>
                 </div>
@@ -288,85 +268,75 @@
         </div>
     </section>
 
-
-     <!-- Main Event Section -->
-     <section id="main-event" class="py-5">
+    <!-- Main Event Section -->
+    <section id="main-event" class="py-5">
         <div class="container">
             <div class="row justify-content-center text-center mb-4">
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-up" data-aos-duration="800">
                     <h2 class="mainevent-text"><b>MAIN</b> EVENTS</h2>
                 </div>
             </div>
 
             <div class="event-card-row">
                 <!-- First Event Card -->
-                <div class="col-card">
+                <div class="col-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     <div class="day-card">
                         <a href="../Events Pages/nrithya.html"><img src="assets/EKTHA events/Nrithya25.jpg" class="img-fluid" alt="Nrithya 25"></a>
                     </div>
                 </div>
 
                 <!-- Second Event Card -->
-                <div class="col-card">
+                <div class="col-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                     <div class="day-card">
                         <a href="/Events Pages/melodia.html"><img src="assets/EKTHA events/Melodia25.jpg" class="img-fluid" alt="Melodia 25"></a>
                     </div>
                 </div>
 
                 <!-- Third Event Card -->
-                <div class="col-card">
+                <div class="col-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
                     <div class="day-card">
                         <a href="/Events Pages/dancebash.html"><img src="assets/EKTHA events/Dance Bash.jpg" class="img-fluid" alt="Dance Bash"></a>
                     </div>
                 </div>
-                
-                <!-- Fourth Event Card -->
-                <!-- <div class="col-card">
-                    <div class="day-card">
-                        <img src="assets/EKTHA events/Dance Bash.jpg" class="img-fluid" alt="Dance Bash">
-                    </div>
-                </div> -->
             </div>
-            <div class="view-events-btn container text-center mt-3">
+            <div class="view-events-btn container text-center mt-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
                 <a href="events.html" class="more-event-btn btn btn-light">View More Events<i class="bi bi-arrow-right"></i></a>
             </div>
         </div>
     </section>
 
-
     <!-- Pro Show Section -->
     <section id="proshow-section" class="py-5">
         <div class="container">
             <div class="row justify-content-center text-center mb-4">
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-up" data-aos-duration="800">
                     <h2 class="mainevent-text"><b>PRO</b> SHOWS</h2>
                 </div>
             </div>
 
             <div class="event-card-row">
                 <!-- First Pro Show Card -->
-                <div class="col-card">
+                <div class="col-card" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
                     <div class="day-card">
                         <img src="assets/EKTHA events/fejo.jpg" class="img-fluid" alt="Nrithya 25">
                     </div>
                 </div>
                 <!-- Second Pro Show Card -->
-                <div class="col-card">
+                <div class="col-card" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
                     <div class="day-card">
                         <img src="assets/EKTHA events/GLive.png" class="img-fluid" alt="Nrithya 25">
                     </div>
                 </div>
             </div>
-            <div class="view-events-btn container text-center mt-3">
+            <div class="view-events-btn container text-center mt-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                 <a href="events.html" class="more-event-btn btn btn-light">View More Pro Show Events<i class="bi bi-arrow-right"></i></a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-
-    <footer class=" footer" style="align-items: center;">
-        <div class="footer-left">
+    <footer class="footer" style="align-items: center;">
+        <div class="footer-left" data-aos="fade-right" data-aos-duration="800">
             <h1 class="ektha-footer-text">EKTHA'25</h1>
             <div class="social-icons">
                 <a href="https://www.instagram.com/ektha.25?igsh=MWlvNXhkNHpyZDhsNA=="><i
@@ -378,101 +348,103 @@
         </div>
 
         <!-- Google Map Location of the EVENT -->
-        <div class="evntloc text-center">
+        <div class="evntloc text-center" data-aos="fade-left" data-aos-duration="800">
             <h3>Event Location</h3>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2353.900921398768!2d76.739573!3d8.800327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05e6737fb08e1d%3A0xe9a7bc5ee867b5af!2sUKF%20College%20of%20Engineering%20and%20Technology!5e1!3m2!1sen!2sus!4v1740565553929!5m2!1sen!2sus"
                 width="600" height="300" style="border:0;" allowfullscreen="true" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
-        <!-- <div class="footer-links">
-            <div class="footerRow row">
-                <div class="col col-md-6 links-box ">
-                    <ul>
-                        <li><a href="aboutus.html">About</a></li>
-                        <li><a href="#">Our Mission</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div class="col col-md-6 links-box ">
-                    <ul>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Join our team</a></li>
-                        <li><a href="#">Partner with us</a></li>
-                    </ul>
-                </div> -->
-            </div>
-        </div>
     </footer>
 
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
+    <!-- AOS Animation JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window
+            throttleDelay: 99, // the delay on throttle used while scrolling the page
+            
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 800, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        });
+    </script>
 
+    <!-- Custom Script -->
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+    <script src="logoauto.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.day-card').forEach(card => {
+            // Variables to track mouse position
+            let mouseX = 0;
+            let mouseY = 0;
+            let targetX = 0;
+            let targetY = 0;
+            let isHovering = false;
 
+            // For smoother animation
+            const smoothFactor = 0.15; // Higher value = faster response
 
-</body>
-<!-- JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+            // Update animation frame
+            function updateAnimation() {
+                if (!isHovering) return;
 
-<!-- AOS Animation JS -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+                // Smooth interpolation
+                targetX += (mouseX - targetX) * smoothFactor;
+                targetY += (mouseY - targetY) * smoothFactor;
 
-<!-- Custom Script -->
-<script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
-<script src="logoauto.js"></script>
+                const xRotation = targetY * 20; // Rotation based on mouse Y position
+                const yRotation = -targetX * 20; // Rotation based on mouse X position
 
-<script src="script.js"></script>
-<script>
-    document.querySelectorAll('.day-card').forEach(card => {
-        // Variables to track mouse position
-        let mouseX = 0;
-        let mouseY = 0;
-        let targetX = 0;
-        let targetY = 0;
-        let isHovering = false;
+                // Apply transform
+                card.style.transform = `perspective(1000px) rotateX(${xRotation}deg) rotateY(${yRotation}deg) scale3d(1.05, 1.05, 1.05)`;
 
-        // For smoother animation
-        const smoothFactor = 0.15; // Higher value = faster response
-
-        // Update animation frame
-        function updateAnimation() {
-            if (!isHovering) return;
-
-            // Smooth interpolation
-            targetX += (mouseX - targetX) * smoothFactor;
-            targetY += (mouseY - targetY) * smoothFactor;
-
-            const xRotation = targetY * 20; // Rotation based on mouse Y position
-            const yRotation = -targetX * 20; // Rotation based on mouse X position
-
-            // Apply transform
-            card.style.transform = `perspective(1000px) rotateX(${xRotation}deg) rotateY(${yRotation}deg) scale3d(1.05, 1.05, 1.05)`;
-
-            requestAnimationFrame(updateAnimation);
-        }
-
-        card.addEventListener('mousemove', function (e) {
-            const rect = this.getBoundingClientRect();
-
-            // Calculate mouse position in normalized coordinates (-0.5 to 0.5)
-            mouseX = ((e.clientX - rect.left) / rect.width) - 0.5;
-            mouseY = ((e.clientY - rect.top) / rect.height) - 0.5;
-
-            if (!isHovering) {
-                isHovering = true;
                 requestAnimationFrame(updateAnimation);
             }
-        });
 
-        card.addEventListener('mouseleave', function () {
-            isHovering = false;
-            this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
-        });
-    });
-</script>
+            card.addEventListener('mousemove', function (e) {
+                const rect = this.getBoundingClientRect();
 
+                // Calculate mouse position in normalized coordinates (-0.5 to 0.5)
+                mouseX = ((e.clientX - rect.left) / rect.width) - 0.5;
+                mouseY = ((e.clientY - rect.top) / rect.height) - 0.5;
+
+                if (!isHovering) {
+                    isHovering = true;
+                    requestAnimationFrame(updateAnimation);
+                }
+            });
+
+            card.addEventListener('mouseleave', function () {
+                isHovering = false;
+                this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+            });
+        });
+        
+        // Refresh AOS when new content might be loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                AOS.refresh();
+            }, 500);
+        });
+    </script>
+</body>
 </html>
