@@ -289,50 +289,73 @@
     </section>
 
 
-    <!-- Main Event Section -->
- <section id="main-event">
-    <div class="mainevent">
-        <h2 class="mainevent-text"><b>Echoes of</b> EKTHA'25</h2>
-        <br></br>
-    </div>
-    <div class="containerr">
-        <div class="day-card">
-            <img src="assets/EKTHA events/fejo.jpg" alt="Day 1">
-        </div>
-        <div class="day-card">
-            <img src="assets/EKTHA events/fejo.jpg" alt="Day 1">
-        </div>
-        <div class="day-card">
-            <img src="assets/EKTHA events/fejo.jpg" alt="Day 1">
-        </div>
-        <!-- <div class="card">
-            <a href="event.html"><img class="img-fluid" 
-                    src="assets/EKTHA events/Nrithya'25.jpg"
-                    alt="card"></a>
-        </div>
-        <div class="card">
-            <a href="event.html"><img src="assets/EKTHA events/Melodia'25.jpg" alt="card"></a>
-        </div>
-        <div class="card">
-            <a href="event.html"><img src="assets/EKTHA events/Dance Bash.jpg" alt="card"></a>
-        </div> -->
-    </div>
-    </div>
-</section> 
-   
+     <!-- Main Event Section -->
+     <section id="main-event" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-4">
+                <div class="col-12">
+                    <h2 class="mainevent-text"><b>MAIN</b> EVENTS</h2>
+                </div>
+            </div>
 
-    <div class="pro-show-container">
-        <h2 class="pro-show-title">Pro Show</h2>
-        <div class="pro-show-cards">
-            <div class="day-card">
-                <img src="assets/EKTHA events/fejo.jpg" alt="Day 1">
-                <p>Day 1</p>
+            <div class="event-card-row">
+                <!-- First Event Card -->
+                <div class="col-card">
+                    <div class="day-card">
+                        <a href="/Events Pages/nrithya.html"><img src="assets/EKTHA events/Nrithya25.jpg" class="img-fluid" alt="Nrithya 25"></a>
+                    </div>
+                </div>
+
+                <!-- Second Event Card -->
+                <div class="col-card">
+                    <div class="day-card">
+                        <a href="/Events Pages/melodia.html"><img src="assets/EKTHA events/Melodia25.jpg" class="img-fluid" alt="Melodia 25"></a>
+                    </div>
+                </div>
+
+                <!-- Third Event Card -->
+                <div class="col-card">
+                    <div class="day-card">
+                        <a href="/Events Pages/dancebash.html"><img src="assets/EKTHA events/Dance Bash.jpg" class="img-fluid" alt="Dance Bash"></a>
+                    </div>
+                </div>
+                
+                <!-- Fourth Event Card -->
+                <!-- <div class="col-card">
+                    <div class="day-card">
+                        <img src="assets/EKTHA events/Dance Bash.jpg" class="img-fluid" alt="Dance Bash">
+                    </div>
+                </div> -->
             </div>
         </div>
-        <div class="book-button">
-            <!-- <button>Book Now</button> -->
+    </section>
+
+
+    <!-- Main Event Section -->
+    <section id="main-event" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-4">
+                <div class="col-12">
+                    <h2 class="proshow-text"><b>PRO</b> SHOW</h2>
+                </div>
+            </div>
+
+            <div class="event-card-row">
+                <!-- First Pro Show Card -->
+                <div class="col-card">
+                    <div class="day-card">
+                        <img src="assets/EKTHA events/fejo.jpg" class="img-fluid" alt="Nrithya 25">
+                    </div>
+                </div>
+                <!-- Second Pro Show Card -->
+                <div class="col-card">
+                    <div class="day-card">
+                        <img src="assets/EKTHA events/GLive.png" class="img-fluid" alt="Nrithya 25">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!-- Footer -->
 
@@ -399,51 +422,51 @@
 <script src="script.js"></script>
 <script>
     document.querySelectorAll('.day-card').forEach(card => {
-    // Variables to track mouse position
-    let mouseX = 0;
-    let mouseY = 0;
-    let targetX = 0;
-    let targetY = 0;
-    let isHovering = false;
-    
-    // For smoother animation
-    const smoothFactor = 0.15; // Higher value = faster response
-    
-    // Update animation frame
-    function updateAnimation() {
-        if (!isHovering) return;
-        
-        // Smooth interpolation
-        targetX += (mouseX - targetX) * smoothFactor;
-        targetY += (mouseY - targetY) * smoothFactor;
-        
-        const xRotation = targetY * 20; // Rotation based on mouse Y position
-        const yRotation = -targetX * 20; // Rotation based on mouse X position
-        
-        // Apply transform
-        card.style.transform = `perspective(1000px) rotateX(${xRotation}deg) rotateY(${yRotation}deg) scale3d(1.05, 1.05, 1.05)`;
-        
-        requestAnimationFrame(updateAnimation);
-    }
-    
-    card.addEventListener('mousemove', function(e) {
-        const rect = this.getBoundingClientRect();
-        
-        // Calculate mouse position in normalized coordinates (-0.5 to 0.5)
-        mouseX = ((e.clientX - rect.left) / rect.width) - 0.5;
-        mouseY = ((e.clientY - rect.top) / rect.height) - 0.5;
-        
-        if (!isHovering) {
-            isHovering = true;
+        // Variables to track mouse position
+        let mouseX = 0;
+        let mouseY = 0;
+        let targetX = 0;
+        let targetY = 0;
+        let isHovering = false;
+
+        // For smoother animation
+        const smoothFactor = 0.15; // Higher value = faster response
+
+        // Update animation frame
+        function updateAnimation() {
+            if (!isHovering) return;
+
+            // Smooth interpolation
+            targetX += (mouseX - targetX) * smoothFactor;
+            targetY += (mouseY - targetY) * smoothFactor;
+
+            const xRotation = targetY * 20; // Rotation based on mouse Y position
+            const yRotation = -targetX * 20; // Rotation based on mouse X position
+
+            // Apply transform
+            card.style.transform = `perspective(1000px) rotateX(${xRotation}deg) rotateY(${yRotation}deg) scale3d(1.05, 1.05, 1.05)`;
+
             requestAnimationFrame(updateAnimation);
         }
+
+        card.addEventListener('mousemove', function (e) {
+            const rect = this.getBoundingClientRect();
+
+            // Calculate mouse position in normalized coordinates (-0.5 to 0.5)
+            mouseX = ((e.clientX - rect.left) / rect.width) - 0.5;
+            mouseY = ((e.clientY - rect.top) / rect.height) - 0.5;
+
+            if (!isHovering) {
+                isHovering = true;
+                requestAnimationFrame(updateAnimation);
+            }
+        });
+
+        card.addEventListener('mouseleave', function () {
+            isHovering = false;
+            this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+        });
     });
-    
-    card.addEventListener('mouseleave', function() {
-        isHovering = false;
-        this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
-    });
-});
-    </script>
+</script>
 
 </html>
