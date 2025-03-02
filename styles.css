@@ -934,10 +934,6 @@ button {
     flex-wrap: wrap; /* Ensures responsiveness */
     gap: 15px;
 }
-
-.day-card {
-    
-}
 @media (max-width: 1627px) {
     .day-card {
         width: 350px;
