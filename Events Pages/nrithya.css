@@ -1,10 +1,15 @@
+/* Event Details */
+
 .nrithya-container{
     display: flex;
     justify-content: center;
     margin-top: 10rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
+
+
 .nrithya-img-col img{
+    border-radius: 20px 0px 0px 20px;
     width: 22.6rem;
 }
 
@@ -160,3 +165,55 @@
     
 }
 
+
+
+/* Nrithya Rules and Regulations */
+
+.nrithya-rules-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.rules-row{
+    justify-content: center;
+    width:90%;
+}
+
+.rules-details{
+    background-color: #1d1d1d;
+    text-align: justify;
+    border-radius: 20px;
+}
+
+/* Rules Text */
+.rules-text h1{
+    margin-top: 1.3rem;
+    margin-left: 0.5rem;
+    font-weight: 800;
+    font-size: 2.6rem;
+    text-align: start;
+    color: white;
+    font-family: "Funnel Display";
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}   
+
+.rules-text li{
+    /* margin-top: 2rem; */
+    font-weight: 300;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 40px;
+    font-size: 1rem;
+    color: white;
+    font-family: "Funnel Display";
+}
+.rules-text h3{
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 40px;
+    font-size: 1.24rem;
+    color: white;
+    font-family: "Funnel Display";
+}
