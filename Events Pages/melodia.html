@@ -9,7 +9,6 @@
     <!-- Browser Tab Icon -->
     <link rel="shortcut icon" href="../assets/Ektha_25_Final_-removebg-preview.png" type="image/x-icon">
 
-
     <!-- Boostrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- BootStrap CSS -->
@@ -29,8 +28,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
 
-    <!-- AOS (Animate on Scroll) CSS -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"> -->
+    <!-- AOS (Animate on Scroll) CSS - Uncommented to enable animations -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
 
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="nrithya.css">
@@ -71,8 +70,7 @@
             </div>
 
             <!-- Centered Logo -->
-            <a class="navbar-brand" href="#">
-
+            <a class="navbar-brand" href="#" data-aos="fade-in" data-aos-duration="1000">
                 <img class="img-fluid" src="../assets/Ektha_25_Final_-removebg-preview.png" alt="Logo">
             </a>
 
@@ -129,15 +127,15 @@
     <section id="nirthya-event">
         <div class="nrithya-container container-fluid">
             <div class="event-row row">
-                <div class="nrithya-img-col col-md-4">
-                    <img  src="../assets/EKTHA events/Melodia25.jpg" alt="Melodia Poster" srcset="">
+                <div class="nrithya-img-col col-md-4" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <img src="../assets/EKTHA events/Melodia25.jpg" alt="Melodia Poster" srcset="">
                 </div>
                 <div class="event-details col-md-8">
-                    <div class="event-text">
+                    <div class="event-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
                         <h1>Melodia: All India Intercollegiate Music Band Competition</h1>
                         <p>Let your music set the stage on fire! Feel the energy, create electrifying melodies, and make the crowd groove to your rhythm. Whether it's rock, fusion, or soulful tunes, bring your best and own the spotlight! Unleash the power of music, harmonize with passion, and let your sound echo through hearts!
                         </p>
-                        <table class="prize-table">
+                        <table class="prize-table" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400" data-aos-once="true">
                             <tbody>
                                 <tr>
                                     <td><b>First Prize:</b></td>
@@ -158,8 +156,8 @@
 
                             </tbody>
                         </table>
-                        <h2 class="Coordinators-head"> Coordinator Details</h2>
-                        <table class="Coordinators-table ">
+                        <h2 class="Coordinators-head" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600" data-aos-once="true"> Coordinator Details</h2>
+                        <table class="Coordinators-table" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800" data-aos-once="true">
                             <tbody>
                                 <tr>
                                     <td><b>ADIL :</b></td>
@@ -171,11 +169,9 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <div class="container-fluid reg-btn">
+                        <div class="container-fluid reg-btn" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-once="true">
                             <a class="event-register-btn btn" href="https://forms.gle/mRNpg7z46vFRqC2KA">Register</a>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -184,9 +180,8 @@
 
 
     <!-- Footer -->
-
-    <footer class=" footer" style="align-items: center;">
-        <div class="footer-left">
+    <footer class="footer" style="align-items: center;">
+        <div class="footer-left" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
             <h1 class="ektha-footer-text">EKTHA'25</h1>
             <div class="social-icons">
                 <a href="https://www.instagram.com/ektha.25?igsh=MWlvNXhkNHpyZDhsNA=="><i
@@ -198,51 +193,41 @@
         </div>
 
         <!-- Google Map Location of the EVENT -->
-        <div class="evntloc text-center">
+        <div class="evntloc text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
             <h3>Event Location</h3>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2353.900921398768!2d76.739573!3d8.800327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05e6737fb08e1d%3A0xe9a7bc5ee867b5af!2sUKF%20College%20of%20Engineering%20and%20Technology!5e1!3m2!1sen!2sus!4v1740565553929!5m2!1sen!2sus"
                 width="600" height="300" style="border:0;" allowfullscreen="true" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
-        <!-- <div class="footer-links">
-            <div class="footerRow row">
-                <div class="col col-md-6 links-box ">
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Our Mission</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div class="col col-md-6 links-box ">
-                    <ul>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Join our team</a></li>
-                        <li><a href="#">Partner with us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div> -->
     </footer>
 
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
+    <!-- AOS Animation JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                // Global settings
+                offset: 120, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 1000, // values from 0 to 3000, with step 50ms
+                easing: 'ease', // default easing for AOS animations
+                once: false, // whether animation should happen only once - while scrolling down
+                mirror: false, // whether elements should animate out while scrolling past them
+                anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+            });
+        });
+    </script>
 
-
-
+    <!-- Custom Script -->
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+    <script src="../logoauto.js"></script>
+    <script src="../script.js"></script>
 </body>
-<!-- JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
-<!-- AOS Animation JS -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-
-<!-- Custom Script -->
-<script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
-<script src="../logoauto.js"></script>
-
-<script src="../script.js"></script>
+</html>
