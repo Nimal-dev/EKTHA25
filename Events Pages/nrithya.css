@@ -122,11 +122,10 @@
     font-family: "Funnel Display";
 }
 .event-text h3{
-    /* margin-top: 2rem; */
-    font-weight: 300;
+    font-weight: 600;
     padding-left: 10px;
     padding-right: 40px;
-    font-size: 1rem;
+    font-size: 1.24rem;
     color: white;
     font-family: "Funnel Display";
 }
