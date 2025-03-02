@@ -1,0 +1,77 @@
+
+/* ProShows HEAD */
+.proshow-container{
+    background-image: url(assets/concert-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.proshow-card-container{
+    margin-top: 1rem;
+}
+.proshow-head{
+    margin-top: 5%;
+    width: 100%;
+    padding-bottom: 2%;
+    text-align: center;
+    
+}
+.proshow-head1{
+    font-family: 'Cinzel Decorative', serif;
+    font-weight: 800;
+    color: white;
+    position: relative;
+    padding-top: 3%;
+    font-size: 8.5vw;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 
+                0 0 20px rgba(255, 255, 255, 0.4), 
+                0 0 30px rgba(255, 255, 255, 0.2);
+}
+.proshow-head2{
+    color: white;
+    position: relative;
+    font-weight: 700;
+    /* padding-top: 1%; */
+    font-size: 5.5vw;
+}
+
+/* Responsive Design */
+@media (max-width: 1195px) {
+    .proshow-head{
+        margin-top: 8%;
+    }
+}
+@media (max-width: 923px) {
+    .proshow-head{
+        margin-top: 10%;
+    }
+}
+@media (max-width: 800px) {
+    .proshow-head{
+        margin-top: 13%;
+    }
+}
+@media (max-width: 660px) {
+    .proshow-head{
+        margin-top: 16%;
+    }
+}
+@media (max-width: 558px) {
+    .proshow-head{
+        margin-top: 20%;
+    }
+}
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+    .proshow-head{
+       margin-top: 23%;
+    }
+}
+/* Very Small Devices (380px and below) */
+@media (max-width: 430px) {
+    .proshow-head{
+        width: 100%;
+        padding-top: 1rem;
+        margin-top:28%;
+    }
+}

@@ -28,6 +28,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Notable&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
 
+    <style>
+        /* Additional CSS for the department filtration system */
+        .dept-filter-container {
+            background: linear-gradient(135deg, #e9a401, #ff7f50, #e7b93c, #ffae00);
+            padding: 15px 0;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dept-filter {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0 15px;
+        }
+        
+        .dept-btn {
+            background-color: rgba(255, 255, 255, 0.85);
+            color: #000;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-family: 'Outfit', sans-serif;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dept-btn:hover {
+            background-color: rgba(255, 255, 255, 1);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .dept-btn.active {
+            background-color: #000;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .filter-title {
+            text-align: center;
+            font-family: 'Cinzel Decorative', serif;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #000;
+        }
+        
+        .hidden-event {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .dept-btn {
+                padding: 6px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="teams.css">
@@ -133,9 +194,9 @@
 
     <!-- Department Filtration System -->
     <section id="dept-filter">
-        <div class="filter-conatiner container">
+        <div class="container">
             <div class="dept-filter-container">
-                <!-- <h3 class="filter-title">Filter Events by Department</h3> -->
+                <h3 class="filter-title">Filter Events by Department</h3>
                 <div class="dept-filter">
                     <button class="dept-btn active" data-dept="all">All Events</button>
                     <button class="dept-btn" data-dept="cse">CSE</button>
