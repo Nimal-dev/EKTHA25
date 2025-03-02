@@ -750,6 +750,69 @@ h2 {
     max-width: 1600px;
 }
 
+/* View more events button */
+.more-event-btn {
+    background-color: #e7b93c;
+    color: #000;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transform: translateY(0);
+}
+
+/* Hover animation */
+.more-event-btn:hover {
+    background-color: gold;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Click animation */
+.more-event-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    background-color: #a8e320;
+}
+
+/* Button ripple effect */
+.more-event-btn::after {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.3s;
+}
+
+.more-event-btn:active::after {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 1;
+    transition: 0s;
+}
+
+/* Optional: Add a subtle pulse animation */
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(231, 185, 60, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(231, 185, 60, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(231, 185, 60, 0); }
+}
+
+.more-event-btn:hover {
+    animation: pulse 1.5s infinite;
+}
+
 /* Card Container */
 .day-cards {
     display: flex;
