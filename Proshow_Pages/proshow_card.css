@@ -27,7 +27,8 @@
     border-radius: 0px 20px 20px 0px;
 }
 .event-details video{
-    /* background-color: #1d1d1d; */
+    width: 700px;
+    height: auto;
     text-align: start;
     border-radius: 0px 20px 20px 0px;
 }
@@ -100,7 +101,8 @@
     }
     .event-details{
         border-radius: 0px 0px 20px 20px;
-        width: 22.5rem;
+        /* width: 22.5rem; */
+        text-align: center;
     }
     .nrithya-img-col{
         text-align: center;
@@ -108,6 +110,13 @@
     }
     .event-register-btn{
         width: 20rem;
+    }
+    .nrithya-img-col img{
+        border-radius: 20px 20px 0px 0px;
+    }
+    .event-details video{
+        width: 360px;
+        border-radius: 0px;
     }
 }
 
